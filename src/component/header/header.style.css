@@ -9,14 +9,14 @@
 }
 
 
-    .nav {
+    .header_menu .nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 30px;
     }
 
-    .nav a{
+   .header_menu  .nav a{
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
