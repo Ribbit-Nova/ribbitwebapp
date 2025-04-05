@@ -16,7 +16,7 @@ function Header() {
             </div>
           </Col>
           <Col lg="6">
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="#">Features</Nav.Link>
                 <Nav.Link href="#">Blog</Nav.Link>
