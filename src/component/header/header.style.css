@@ -1,0 +1,32 @@
+.header_menu {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 50%, rgba(0, 0, 0, 0.40) 117.11%);
+    backdrop-filter: blur(15px);
+}
+
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav a{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: #828A99;
+    }
+
+    .get_call{
+        border-radius: 8px;
+        background: #9AF26E;
+        font-weight: 600 !important;
+        padding: 8px;
+        color: #000 !important;
+    }

@@ -1,0 +1,12 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic_arrow_left_bk">
+<mask id="mask0_2_1532" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+<rect id="area" width="24" height="24" transform="matrix(-1 0 0 1 24.5 0.5)" fill="white"/>
+</mask>
+<g mask="url(#mask0_2_1532)">
+<path id="Vector" d="M19.5 12.5H5.5" stroke="#A9FF7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M19.5 12.5L15.5 16.5" stroke="#A9FF7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M19.5 12.5L15.5 8.5" stroke="#A9FF7E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
