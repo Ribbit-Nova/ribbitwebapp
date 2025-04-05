@@ -435,7 +435,7 @@ p.f_text_1 {
     align-items: center;
     color: #A9FF7E;
 }
-.accordion-button {
+.section_8 .accordion-button {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -465,8 +465,8 @@ p.f_text_1 {
     color: #828A99;
     line-height: 1.4;
 }
-.section_8  .accordion-button::before{background: url(../../asets/img/ar1.svg) !important;}
-.section_8  .collapsed span{
+.section_8 .accordion-button::before{background: url(../../asets/img/ar1.svg) !important;}
+.section_8 .collapsed span{
     position: absolute;
     right: 0px;
     top: 5px;

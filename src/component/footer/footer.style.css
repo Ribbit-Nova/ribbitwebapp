@@ -41,8 +41,8 @@
 }
 
 .email_box input {
-    background: no-repeat;
-    border: none;
+    background: no-repeat !important;
+    border: none !important;
 }
 
 

@@ -19,7 +19,7 @@ function Header() {
                 Ribbit combines the best of a crypto wallet, DeFi hub, and
                 real-world payments solution into one powerful app.
               </p>
-              <InputGroup className="mb-3">
+              <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>
 
                 <div className="email_box">
