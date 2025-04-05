@@ -26,7 +26,7 @@ function Header() {
                   Get Support
                 </Nav.Link>
               </Nav>
-            </Navbar.Collapse>
+            </Navbar>
           </Col>
         </Row>
       </Container>
