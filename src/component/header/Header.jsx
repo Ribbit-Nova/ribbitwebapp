@@ -16,17 +16,15 @@ function Header() {
             </div>
           </Col>
           <Col lg="6">
-            <Navbar id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#">Features</Nav.Link>
-                <Nav.Link href="#">Blog</Nav.Link>
-                <Nav.Link href="#">Documents</Nav.Link>
-                <Nav.Link href="#">Learn</Nav.Link>
-                <Nav.Link href="#" className="get_call">
-                  Get Support
-                </Nav.Link>
-              </Nav>
-            </Navbar>
+            <Nav className="me-auto">
+              <Nav.Link href="#">Features</Nav.Link>
+              <Nav.Link href="#">Blog</Nav.Link>
+              <Nav.Link href="#">Documents</Nav.Link>
+              <Nav.Link href="#">Learn</Nav.Link>
+              <Nav.Link href="#" className="get_call">
+                Get Support
+              </Nav.Link>
+            </Nav>
           </Col>
         </Row>
       </Container>
