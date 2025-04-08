@@ -191,6 +191,7 @@
     display: flex;
     gap: 8px;
     justify-content: center;
+    align-items: center;
 }
 
 .section_3 .card {
@@ -227,6 +228,13 @@
     width: 12px !important;
     background: #424040;
     border: none;
+    box-sizing: inherit !important;
+    border-bottom: none;
+    background-clip:inherit  !important;
+    border-bottom: none ;
+    border-bottom: none !important;
+  
+  
 }
 
 .carousel-indicators .active {
@@ -234,6 +242,9 @@
     height: 12px !important;
     width: 12px !important;
     background: #9AF26E;
+    box-sizing: inherit;
+
+    border-bottom: none;
 }
 .card-img-top{
     width: 90px;
