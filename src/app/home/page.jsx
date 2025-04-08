@@ -178,7 +178,7 @@ const MultiCardCarousel = () => {
 
             <Col lg="12">
               <div className="slider_card">
-                <Carousel interval={3000} pause="hover">
+                <Carousel>
                   {slides.map((group, idx) => (
                     <Carousel.Item key={idx}>
                       <Row className="px-4">

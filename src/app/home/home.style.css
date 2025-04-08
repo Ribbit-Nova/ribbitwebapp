@@ -222,20 +222,22 @@
 }
 
 .carousel-indicators button {
-    border-radius: 100px;
-    height: 12px;
-    width: 12px;
+    border-radius: 100px !important;
+    height: 12px !important;
+    width: 12px !important;
     background: #424040;
     border: none;
 }
 
 .carousel-indicators .active {
     border-radius: 100px;
-    height: 12px;
-    width: 12px;
+    height: 12px !important;
+    width: 12px !important;
     background: #9AF26E;
 }
-
+.card-img-top{
+    width: 90px;
+    height: 90px;}
 /* section_3 */
 
 /* section_4 */
@@ -447,9 +449,12 @@ p.f_text_1 {
     padding-left: 0px;
 }
 .section_8 .accordion-item {
-    padding-top: 20px;
-    padding-bottom:20px;
-    border-bottom: 1px solid #454545;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #454545 !important;
+    background: no-repeat;
+    border: none;
+    border-radius: 0px;
 }
 .section_8 .accordion-header {
     margin: 0px;
@@ -464,6 +469,7 @@ p.f_text_1 {
     margin-top: 12px;
     color: #828A99;
     line-height: 1.4;
+    padding: 10px 0px;
 }
 .section_8 .accordion-button::before{background: url(../../asets/img/ar1.svg) !important;}
 .section_8 .collapsed span{
@@ -478,4 +484,6 @@ p.f_text_1 {
     right: 0px;
     top: 5px;
 }
+.accordion-button:not(.collapsed)::after{display: none !important;}
+.accordion-button::after{display: none !important;}
 /* section_8 */

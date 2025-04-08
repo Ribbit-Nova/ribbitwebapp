@@ -28,11 +28,15 @@
     float: left;
     width: 100%;
 }
-
+.email_box input::placeholder {
+   
+    opacity: 0.5;
+    color:#fff !important;
+  }
 .email_box {
     display: flex;
     width: 72%;
-    border-radius: 6.462px;
+    border-radius: 6.462px !important;
     border: 1px solid #272626;
     background: #000;
     padding: 7px 12px;
@@ -79,4 +83,9 @@
     float: left;
     width: 100%;
     margin-top: 40px;
+}
+.input-group-text {
+    background: no-repeat;
+    border: none;
+    padding: 0px;
 }
