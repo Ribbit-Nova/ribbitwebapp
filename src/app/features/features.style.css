@@ -177,9 +177,9 @@
     color: #828A99;
 }
 .pow_1{    flex-wrap: wrap;}
-.pow_1 .ribbit_box_img {
+/* .pow_1 .ribbit_box_img {
     margin-bottom: 34px;
-}
+} */
 
 .ribbit_box_text {
     position: relative;
