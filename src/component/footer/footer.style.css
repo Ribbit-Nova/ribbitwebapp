@@ -89,3 +89,115 @@
     border: none;
     padding: 0px;
 }
+.mobile_m.col-lg-12 {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .accordion-item:first-of-type>.accordion-header .accordion-button{border: none !important;}
+.input-group {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.logo_footer p{font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+
+    color: #fff;}
+    .input-group {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .input-group-text{    justify-content: center;}
+    .ft_menu p{    margin-bottom: 15px;}
+
+
+.footer_menu .accordion-button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 12px;
+        padding-bottom: 12px;
+    width: 100%;
+    text-align: left;
+    background: no-repeat;
+    border: none;
+    color: #fff;
+    padding-left: 0px;
+}
+
+.footer_menu .accordion-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #454545 !important;
+    background: no-repeat;
+    border: none;
+    border-radius: 0px;
+}
+
+.footer_menu .accordion-header {
+    margin: 0px;
+    position: relative;
+    line-height: 19px;
+}
+
+.footer_menu .accordion-body {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 12px;
+    color: #828A99;
+    line-height: 1.4;
+    padding: 10px 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.footer_menu .accordion-button::before {
+    background: url(../../asets/img/ar1.svg) !important;
+}
+
+.footer_menu .collapsed span {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    rotate: 179deg !important;
+}
+
+.footer_menu .accordion-button span {
+    rotate: 360deg;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    display: none !important;
+}
+
+.accordion-button::after {
+    display: none !important;
+}
+.mobile_m  .accordion_box a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    color: #828A99;
+}
+.copyright_text{    text-align: center;}
+.mobile_m  ul {padding: 0px;}
+.footer_menu .col-lg-3{display: none;}
+.footer_menu .col-lg-2{display: none;}
+.footer_menu .accordion-button:focus {
+
+    box-shadow: none !important;
+}
+.mobile_m.col-lg-12 {
+    display: block;
+}
+}

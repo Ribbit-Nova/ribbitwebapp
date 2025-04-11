@@ -1,10 +1,18 @@
 "use client";
-import { Col, Container, Row, InputGroup, Form } from "react-bootstrap";
+import {
+  Col,
+  Container,
+  Row,
+  InputGroup,
+  Form,
+  Accordion,
+} from "react-bootstrap";
 import "./footer.style.css";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../asets/img/logo.png";
 import arow from "../../asets/img/arow.svg";
+import ar1 from "../../asets/img/ar1.svg";
 
 function Header() {
   return (
@@ -84,6 +92,101 @@ function Header() {
                   <Link href="#">News</Link>
                 </li>
               </ul>
+            </div>
+          </Col>
+
+          <Col lg="12" className="mobile_m">
+            <div className="accordion_box">
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    Company
+                    <span>
+                      {" "}
+                      <Image
+                        className="k_icon"
+                        src={ar1}
+                        alt="ar1"
+                        width={14}
+                        height={14}
+                      />{" "}
+                    </span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      <li>
+                        <Link href="#">About Us</Link>
+                      </li>
+                      <li>
+                        <Link href="#"> Whitepaper</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Terms</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Privacy Policy</Link>
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    Product
+                    <span>
+                      {" "}
+                      <Image
+                        className="k_icon"
+                        src={ar1}
+                        alt="ar1"
+                        width={14}
+                        height={14}
+                      />{" "}
+                    </span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      <li>
+                        <Link href="#">Browser Extension</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Mobile App</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Indices</Link>
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>
+                    Resources
+                    <span>
+                      {" "}
+                      <Image
+                        className="k_icon"
+                        src={ar1}
+                        alt="ar1"
+                        width={14}
+                        height={14}
+                      />{" "}
+                    </span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      <li>
+                        <Link href="#">Blog</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Brandkit</Link>
+                      </li>
+                      <li>
+                        <Link href="#">News</Link>
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
           </Col>
           <Col lg="12">
