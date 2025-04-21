@@ -132,6 +132,12 @@
     background: #000;
     position: relative;
 }
+.carousel-control-next {
+    display: none;
+}
+.carousel-control-prev {
+    display: none;
+}
 
 .section_2 .container {
     position: relative;
@@ -649,5 +655,12 @@ p.f_text_1 {
     p.f_text_1{    font-size: 25px;       margin-bottom: 10px;   line-height: 1.4;}
     .mobile_img img{    height: 600px;}
     
-  
+  .bc_1{width: 100%;}
+  img{max-width: 100%;}
+  .bc_3 {width: 77%;
+    left: 0px;
+    right: 0px;
+    margin:
+auto;}
+    .bc_2{width: 100%;left: 0px;}
 }
