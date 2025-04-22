@@ -6,6 +6,10 @@
     width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 50%, rgba(0, 0, 0, 0.40) 117.11%);
     backdrop-filter: blur(15px);
+    transition: all 0.4s ease;
+}
+.shadow-md{      padding-top: 20px;
+    padding-bottom: 20px;
 }
 .header_menu a:hover{color: #9AF26E;}
 

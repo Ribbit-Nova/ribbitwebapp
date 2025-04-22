@@ -1,13 +1,29 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import classNames from "classnames";
 import { Nav, Navbar, Col, Container, Row } from "react-bootstrap";
 import "./header.style.css";
 import Image from "next/image";
 import logo from "../../asets/img/logo.png";
 
 function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <header className="header_menu">
+    <header
+      className={classNames("header_menu fixed  transition-all duration-300", {
+        "shadow-md": scrolled,
+        "bg-transparent": !scrolled,
+      })}
+    >
       <Container>
         <div className="web_menu">
           <Col>

@@ -61,7 +61,7 @@
 
 
 .section_text {
-    font-size: 40px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     color: #fff;
@@ -126,7 +126,10 @@
 
 
 /* section_2  */
-
+.mobile_img img {
+    max-width: 24% !important;
+    height: auto;
+}
 .section_2 {
     padding-bottom: 80px;
     background: #000;
@@ -152,7 +155,7 @@
 }
 
 .section_text_2 {
-    font-size: 64px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -283,7 +286,7 @@
 }
 
 .bx_text_1 {
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     color: #fff;
@@ -348,10 +351,10 @@ section.section_5 {
 }
 
 .track_text_1 {
-    font-size: 50px;
+   font-size: 37px;
     font-style: normal;
     font-weight: 600;
-    line-height: 72px;
+    line-height: 1.4;
     color: #fff;
 }
 
@@ -439,7 +442,7 @@ section.section_6 {
 
 p.f_text_1 {
     color: #FFF;
-    font-size: 40px;
+    font-size: 37px;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 28px;
