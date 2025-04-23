@@ -15,7 +15,9 @@ import Link from "next/link";
 import Image from "next/image";
 import an from "../../asets/img/an.gif";
 import iconsn from "../../asets/img/icons.png";
-import phone from "../../asets/img/phone.png";
+import m1 from "../../asets/img/m1.jpeg";
+import m2 from "../../asets/img/m2.jpeg";
+import m3 from "../../asets/img/m3.jpeg";
 import supra from "../../asets/img/supra.svg";
 import Layer_1 from "../../asets/img/Layer_1.png";
 import card from "../../asets/img/card.svg";
@@ -24,10 +26,10 @@ import coin from "../../asets/img/coin.gif";
 import phone_1 from "../../asets/img/phone_1.png";
 import k1 from "../../asets/img/k1.svg";
 import k2 from "../../asets/img/k2.svg";
-import k3 from "../../asets/img/k3.svg";
 import k4 from "../../asets/img/k4.svg";
 import ic_arrow_left_bk from "../../asets/img/ic_arrow_left_bk.svg";
 import ar1 from "../../asets/img/ar1.svg";
+import cards from "../../asets/img/cards.gif";
 
 const items = [
   {
@@ -141,7 +143,7 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={phone}
+                      src={m1}
                       alt="phone"
                       width={424}
                       height={856}
@@ -150,7 +152,7 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={phone}
+                      src={m2}
                       alt="phone"
                       width={424}
                       height={856}
@@ -159,7 +161,7 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={phone}
+                      src={m3}
                       alt="phone"
                       width={424}
                       height={856}
@@ -176,7 +178,6 @@ const MultiCardCarousel = () => {
             className="line_01"
             src={Layer_1}
             alt="Layer_1"
-            width={1440}
             height={939}
           />{" "}
         </span>
@@ -240,8 +241,8 @@ const MultiCardCarousel = () => {
                   {" "}
                   <Image
                     className="card_gif"
-                    src={card}
-                    alt="card"
+                    src={cards}
+                    alt="cards"
                     width={197}
                     height={218}
                   />{" "}
@@ -587,102 +588,6 @@ const MultiCardCarousel = () => {
                       Ribbit to support advanced features like real-time data,
                       low-latency swaps, and seamless multi-chain activity in
                       one wallet.
-                    </Accordion.Body>
-                  </Accordion.Item>
-
-                  <Accordion.Item eventKey="6">
-                    <Accordion.Header>
-                      Does Ribbit wallet support NFTs?
-                      <span>
-                        {" "}
-                        <Image
-                          className="k_icon"
-                          src={ar1}
-                          alt="ar1"
-                          width={14}
-                          height={14}
-                        />{" "}
-                      </span>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Yes, Ribbit supports NFTs across major blockchains. With
-                      the help of our partner Crystara, the app displays both
-                      on-chain and off-chain NFTs, including media, metadata,
-                      and transaction history. You can view and track your NFT
-                      collections directly inside the wallet.
-                    </Accordion.Body>
-                  </Accordion.Item>
-
-                  <Accordion.Item eventKey="7">
-                    <Accordion.Header>
-                      Does Ribbit wallet include a dApp browser?
-                      <span>
-                        {" "}
-                        <Image
-                          className="k_icon"
-                          src={ar1}
-                          alt="ar1"
-                          width={14}
-                          height={14}
-                        />{" "}
-                      </span>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Yes, Ribbit has a built-in browser that lets you access
-                      and interact with dApps directly from the app. You can
-                      visit any supported platform, connect your Ribbit wallet,
-                      and approve transactions without leaving the app. The
-                      browser also keeps a history of visited sites and actions.
-                    </Accordion.Body>
-                  </Accordion.Item>
-
-                  <Accordion.Item eventKey="8">
-                    <Accordion.Header>
-                      How does Ribbit support limit orders on DEXs?
-                      <span>
-                        {" "}
-                        <Image
-                          className="k_icon"
-                          src={ar1}
-                          alt="ar1"
-                          width={14}
-                          height={14}
-                        />{" "}
-                      </span>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Ribbit allows you to place limit orders on decentralized
-                      exchanges. This means you can set the exact price at which
-                      you want to buy or sell a token. The order is
-                      automatically filled when the market hits your price. This
-                      feature gives you more control over trades and helps avoid
-                      slippage during market swings.
-                    </Accordion.Body>
-                  </Accordion.Item>
-
-                  <Accordion.Item eventKey="9">
-                    <Accordion.Header>
-                      What are Ribbit Indices?
-                      <span>
-                        {" "}
-                        <Image
-                          className="k_icon"
-                          src={ar1}
-                          alt="ar1"
-                          width={14}
-                          height={14}
-                        />{" "}
-                      </span>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Ribbit Indices are curated token groups that help users
-                      track and invest in specific areas of the crypto market.
-                      Each index is based on a theme like DeFi, Layer-1
-                      blockchains, memes, RWAs or stablecoins. Users can view
-                      performance, token weights, and market trends in one
-                      place. You can also invest directly into any index with a
-                      single tap, and Ribbit will automatically distribute your
-                      funds across the tokens in that index.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
