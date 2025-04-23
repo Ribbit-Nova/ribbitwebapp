@@ -7,99 +7,125 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 50%, rgba(0, 0, 0, 0.40) 117.11%);
     backdrop-filter: blur(15px);
     transition: all 0.4s ease;
+    top:0px;
 }
-.shadow-md{      padding-top: 20px;
+
+.shadow-md {
+    padding-top: 20px;
     padding-bottom: 20px;
+    top: 0px;
 }
-.header_menu a:hover{color: #9AF26E;}
+.nav-link:focus{
+    color: #828A99 ;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #828A99 ;
+}
+.header_menu a:hover {
+    color: #9AF26E ;
+}
+
+.header_menu .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+    background: no-repeat !important;
+}
+
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+    float: right;
+}
+
+.header_menu a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #828A99 ;
+}
+
+.get_call {
+    border-radius: 8px;
+    background: #9AF26E;
+    font-weight: 600 !important;
+    padding: 8px;
+    color: #000 !important;
+}
+
+.web_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    :focus-visible {
+        outline: 0px solid;
+
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+        width: 100%;
+        float: left;
+        position: absolute;
+        left: 0px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 14px;
+        top: -19px;
+    }
+
+    #basic-navbar-nav {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        background: linear-gradient(180deg, rgb(0 0 0 / 67%) 50%, rgb(0 0 0) 117.11%);
+        top: 29px;
+        padding: 23px 23px;
+    }
 
     .header_menu .navbar-nav {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 30px;
-    }
-    nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
-        background: no-repeat !important;
-    }
-    nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
-        float: right;
-    }
-   .header_menu   a{
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        color: #828A99;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
     }
 
-    .get_call{
-        border-radius: 8px;
-        background: #9AF26E;
-        font-weight: 600 !important;
-        padding: 8px;
-        color: #000 !important;
-    }
-    .web_menu {
-        display: flex
-    ;
-        justify-content: space-around;
-        align-items: center;
-    }
 
-    @media only screen and (max-width: 767px) {
-        :focus-visible {
-            outline: 0px solid ;
-           
-          }
-          .navbar-toggler:focus{ box-shadow: none;}
+    .header_menu {
+        padding-top: 13px;
+        padding-bottom: 13px;
 
-        .bg-body-tertiary.navbar.navbar-expand-lg.navbar-light{width: 100%;
-            float: left;
-            position: absolute;
-            left: 0px;}
-            .navbar-toggler{
-                position: absolute;
-                right: 14px;
-                top: -19px;
-              }
-              #basic-navbar-nav{
-                position: absolute;
-                width: 100%;
-                left: 0px;
-                right: 0px;
-                background: linear-gradient(180deg, rgb(0 0 0 / 67%) 50%, rgb(0 0 0) 117.11%);
-                top: 29px;
-                padding: 23px 23px;
-              }
-              .header_menu .navbar-nav {
-                display: flex
-            ;
-                justify-content: center;
-                align-items: flex-start;
-                gap: 5px;
-            }
-
-
-        .header_menu {
-            padding-top: 13px;
-            padding-bottom: 13px;
-           
-            position: fixed;
-            width: 100%;
+        position: fixed;
+        width: 100%;
         
-        }
-        button.navbar-toggler {
-            border: none !important;
-            color: #fff !important;
-            background: #fff;
-            border-radius: 1000%;
-            width: 37px;
-            text-align: center;}
-            span.navbar-toggler-icon {
-                color: #fff !important;
-                width: 140%;
-                position: relative;
-                left: -2px;
-            }
 
     }
+
+    button.navbar-toggler {
+        border: none !important;
+        color: #fff !important;
+        background: #fff;
+        border-radius: 1000%;
+        width: 37px;
+        text-align: center;
+    }
+
+    span.navbar-toggler-icon {
+        color: #fff !important;
+        width: 140%;
+        position: relative;
+        left: -2px;
+    }
+
+}
