@@ -43,7 +43,7 @@ function Fatures() {
 
               <Col lg="12">
                 <div className="browser_btn">
-                  <Link href="">
+                  <Link href="/download">
                     {" "}
                     <Image
                       className="btn_iocn"
@@ -53,7 +53,7 @@ function Fatures() {
                     />{" "}
                     Browser extension
                   </Link>
-                  <Link href="">Download mobile app</Link>
+                  <Link href="/download">Download mobile app</Link>
                 </div>
               </Col>
             </Row>

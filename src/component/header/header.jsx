@@ -5,7 +5,7 @@ import { Nav, Navbar, Col, Container, Row } from "react-bootstrap";
 import "./header.style.css";
 import Image from "next/image";
 import logo from "../../asets/img/logo.png";
-import Link from "next/link";
+<link rel="icon" href="/favicon.ico.png" />;
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,8 +41,11 @@ function Header() {
                   <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="#">Blog</Nav.Link>
                   <Nav.Link href="#">Documents</Nav.Link>
-                  <Nav.Link href="#">Learn</Nav.Link>
-                  <Nav.Link href="#" className="get_call">
+                  <Nav.Link href="/faq">Faq</Nav.Link>
+                  <Nav.Link
+                    href="https://t.me/abhinav_eth"
+                    className="get_call"
+                  >
                     Get Support
                   </Nav.Link>
                 </Nav>

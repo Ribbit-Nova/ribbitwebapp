@@ -11,7 +11,7 @@ import "./footer.style.css";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../asets/img/logo.png";
-import arow from "../../asets/img/arow.svg";
+import add from "../../asets/img/add.svg";
 import ar1 from "../../asets/img/ar1.svg";
 
 function Header() {
@@ -27,7 +27,12 @@ function Header() {
                 Ribbit combines the best of a crypto wallet, DeFi hub, and
                 real-world payments solution into one powerful app.
               </p>
-              <InputGroup className="newsletter">
+              <p className="add_q">
+                {" "}
+                <Image src={add} alt="map" width={20} height={20} /> Ribbitnova
+                Inc 8 The Green, Ste A, Dover, Delaware Zip Code 19901
+              </p>
+              {/* <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>
 
                 <div className="email_box">
@@ -39,7 +44,7 @@ function Header() {
                     <Image src={arow} alt="arow" width={28} height={28} />
                   </Link>
                 </div>
-              </InputGroup>
+              </InputGroup> */}
             </div>
           </Col>
           <Col lg="3">
