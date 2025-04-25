@@ -1,7 +1,7 @@
 .header_menu {
     padding-top: 36px;
     padding-bottom: 36px;
-    z-index: 99;
+    z-index: 999;
     position: fixed;
     width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 50%, rgba(0, 0, 0, 0.40) 117.11%);

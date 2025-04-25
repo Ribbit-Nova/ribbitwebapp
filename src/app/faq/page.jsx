@@ -10,66 +10,12 @@ import {
   Card,
   Accordion,
 } from "react-bootstrap";
-import "./home.style.css";
-import Link from "next/link";
+import "./faq.style.css";
+
 import Image from "next/image";
-import an from "../../asets/img/an.gif";
-import iconsn from "../../asets/img/icons.png";
-import m1 from "../../asets/img/m1.jpeg";
-import m2 from "../../asets/img/m2.jpeg";
-import m3 from "../../asets/img/m3.jpeg";
-import supra from "../../asets/img/supra.svg";
-import Layer_1 from "../../asets/img/Layer_1.png";
-import card from "../../asets/img/card.svg";
-import graphic from "../../asets/img/graphic.png";
-import coin from "../../asets/img/coin.gif";
-import phone_1 from "../../asets/img/phone_1.png";
-import k1 from "../../asets/img/k1.svg";
-import k2 from "../../asets/img/k2.svg";
-import k4 from "../../asets/img/k4.svg";
-import ic_arrow_left_bk from "../../asets/img/ic_arrow_left_bk.svg";
 import ar1 from "../../asets/img/ar1.svg";
-import cards from "../../asets/img/cards.gif";
 
-const items = [
-  {
-    title: "Multi-Chain Support",
-    img: "slider_img/icon1.png",
-  },
-  {
-    title: "AI-Powered Portfolio",
-    img: "slider_img/icon2.png",
-  },
-  {
-    title: "Limit order on Dex",
-    img: "slider_img/icon3.png",
-  },
-  {
-    title: "DeFi Without Complexity",
-    img: "slider_img/icon4.png",
-  },
-  {
-    title: "Loyalty Rewards",
-    img: "slider_img/icon5.png",
-  },
-  {
-    title: "Dapp Browser",
-    img: "slider_img/icon6.png",
-  },
-];
-
-// Split into groups of 4
-const chunkArray = (arr, size) => {
-  const result = [];
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, i + size));
-  }
-  return result;
-};
-
-const MultiCardCarousel = () => {
-  const slides = chunkArray(items, 4);
-
+function Faq() {
   return (
     <>
       <Header />
@@ -349,6 +295,6 @@ const MultiCardCarousel = () => {
       <Footer />
     </>
   );
-};
+}
 
-export default MultiCardCarousel;
+export default Faq;

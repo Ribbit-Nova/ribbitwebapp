@@ -126,6 +126,10 @@
 
 
 /* section_2  */
+.section_3 {
+    z-index: 99;
+    position: relative;
+}
 .mobile_img img {
     max-width: 24% !important;
     height: auto;
@@ -648,6 +652,7 @@ p.f_text_1 {
         height: 56px;
         padding: 0px 18px;
     }
+   
     .trck_text_img img{height: 300px;}
     section.section_5{    border-radius: 0px;}
     .section_8 {

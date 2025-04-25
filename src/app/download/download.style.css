@@ -156,13 +156,14 @@
     flex-direction: column;
     top: 0px;
 }
+
 .mobile_01{    opacity: .6;}
 .as1 span {
     float: left;
     width: 100%;
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     margin-top: 7px;
@@ -554,6 +555,9 @@ p.f_text_1 {
         height: 56px;
         padding: 0px 18px;
     }
+    .mobile_img {
+        margin-top: 25px;
+    }
     .trck_text_img img{height: 300px;}
     section.section_5{    border-radius: 0px;}
     .section_8 {
@@ -568,13 +572,17 @@ p.f_text_1 {
     .mobile_img img{    height: auto;}
     
     .section_new_5 .ribbit_box_img{height: auto;}
-    .browser_btn img{height: 250px;}
+    .browser_btn img{height: auto;}
     .mobile_img a:nth-child(1) {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
+    .mobile_img a:nth-child(2){  width: 100px;
+        height: 100px;}
     .as1 img{
         color: transparent;
-        max-width: 30%;
+        max-width: 21%;
     }
+
+    .section_top{    margin-top: 100px !important;}
 }
