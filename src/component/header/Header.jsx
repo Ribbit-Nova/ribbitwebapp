@@ -5,6 +5,7 @@ import { Nav, Navbar, Col, Container, Row } from "react-bootstrap";
 import "./header.style.css";
 import Image from "next/image";
 import logo from "../../asets/img/logo.png";
+import Link from "next/link";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ function Header() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="#">Features</Nav.Link>
+                  <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="#">Blog</Nav.Link>
                   <Nav.Link href="#">Documents</Nav.Link>
                   <Nav.Link href="#">Learn</Nav.Link>
