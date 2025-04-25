@@ -1,0 +1,31 @@
+name: Deploy Next.js App to AWS Dev Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 3.79.10.143 >> ~/.ssh/known_hosts
+
+      - name: Deploy to AWS Dev Server
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@3.79.10.143 << 'EOF'
+            cd ~/ribbitwebapp
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart ribbitwebsite
+          EOF
