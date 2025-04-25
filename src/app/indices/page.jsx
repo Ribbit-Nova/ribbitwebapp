@@ -11,7 +11,7 @@ import {
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 import Header from "../../component/header/header";
-import Footer from "../../component/footer/Footer";
+import Footer from "../../component/footer/footer";
 import { Col, Container, Row } from "react-bootstrap";
 import "./download.style.css";
 import Link from "next/link";
