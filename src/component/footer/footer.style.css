@@ -16,6 +16,18 @@
     font-weight: 600;
     line-height: 28px;
     color: #fff;
+    margin-bottom: 0px;
+}
+.add_q {
+    font-size: 16px !important;
+    line-height: 1.8;
+    display: flex
+;
+    gap: 10px;
+}
+.add_q img{
+    position: relative;
+    top: 4px;
 }
 
 .input-group-text {
