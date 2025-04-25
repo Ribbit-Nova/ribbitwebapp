@@ -388,6 +388,10 @@ p.f_text_1 {
 
 
 @media only screen and (max-width: 767px) {
+    .ch1 {
+        top: 0px;
+    }
+    .section_1{height: 400px;}
     .section_text {
         width: 100%;
         font-size: 16px;
