@@ -29,8 +29,9 @@ function Header() {
         <div className="web_menu">
           <Col>
             <div className="logo_header">
-              {" "}
-              <Image src={logo} alt="Logo" width={125} height={30} />
+              <a href="/">
+                <Image src={logo} alt="Logo" width={125} height={30} />
+              </a>
             </div>
           </Col>
           <Col>
