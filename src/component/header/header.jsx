@@ -5,7 +5,7 @@ import { Nav, Navbar, Col, Container, Row } from "react-bootstrap";
 import "./header.style.css";
 import Image from "next/image";
 import logo from "../../asets/img/logo.png";
-<link rel="icon" href="/favicon.ico.png" />;
+<link rel="icon" href="/favicon.ico" />;
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
