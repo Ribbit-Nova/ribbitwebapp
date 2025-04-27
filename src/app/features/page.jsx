@@ -35,6 +35,11 @@ function Fatures() {
           <Container>
             <Row>
               <Col lg="12">
+                <div className="coom_btn">
+                  <Link className="cm_1" href="#">
+                    Comming Soon
+                  </Link>
+                </div>
                 <h1 className="section_text">
                   Next-generation multi-chain wallet and payments app that makes
                   crypto simple, secure, and usable in daily life.
