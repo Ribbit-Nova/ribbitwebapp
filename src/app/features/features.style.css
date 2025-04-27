@@ -390,8 +390,10 @@ p.f_text_1 {
 @media only screen and (max-width: 767px) {
     .ch1 {
         top: 0px;
+        order: 2;
     }
-    .section_1{height: 400px;}
+    .ribbit_box_text{    order: 2;}
+    .section_1{height: 450px;}
     .section_text {
         width: 100%;
         font-size: 16px;

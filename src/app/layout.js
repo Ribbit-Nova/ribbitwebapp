@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "RibbitNova",
-  description: "Next-generation multi-chain wallet and payments app that makes crypto simple, secure, and usable in daily life.",
+  description: "Next-generation multi-chain wallet and payments app that makes crypto simple, secure, and usable in daily life. ",
 };
 
 export default function RootLayout({ children }) {

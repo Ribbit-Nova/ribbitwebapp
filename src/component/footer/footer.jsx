@@ -1,20 +1,14 @@
 "use client";
-import {
-  Col,
-  Container,
-  Row,
-  InputGroup,
-  Form,
-  Accordion,
-} from "react-bootstrap";
+import { Col, Container, Row, Accordion } from "react-bootstrap";
 import "./footer.style.css";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../asets/img/logo.png";
 import add from "../../asets/img/add.svg";
 import ar1 from "../../asets/img/ar1.svg";
+import phone_1 from "../../asets/img/phone_1.svg";
 
-function Header() {
+function footer() {
   return (
     <footer className="footer_menu">
       <Container>
@@ -23,15 +17,20 @@ function Header() {
             <div className="logo_footer">
               {" "}
               <Image src={logo} alt="Logo" width={125} height={30} />
-              <p>
-                Ribbit combines the best of a crypto wallet, DeFi hub, and
-                real-world payments solution into one powerful app.
-              </p>
-              <p className="add_q">
+              <ul>
                 {" "}
-                <Image src={add} alt="map" width={20} height={20} /> Ribbitnova
-                Inc 8 The Green, Ste A, Dover, Delaware Zip Code 19901
-              </p>
+                <li className="add_q">
+                  {" "}
+                  <Image src={phone_1} alt="map" width={20} height={20} /> +1
+                  302 3420 342 19901
+                </li>
+                <li className="add_q">
+                  {" "}
+                  <Image src={add} alt="map" width={20} height={20} />{" "}
+                  Ribbitnova Inc 8 The Green, Ste A, Dover, Delaware Zip Code
+                  19901
+                </li>
+              </ul>
               {/* <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>
 
@@ -205,4 +204,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default footer;

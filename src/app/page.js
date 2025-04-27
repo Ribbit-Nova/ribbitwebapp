@@ -1,6 +1,6 @@
 "use client";
 import Header from "../component/header/header";
-import Footer from "../component/footer/footer";
+import Footer from "../component/footer/Footer";
 
 import {
   Col,
@@ -149,10 +149,11 @@ const MultiCardCarousel = () => {
                       height={856}
                     />
                   </Carousel.Item>
+                 
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m2}
+                      src={m3}
                       alt="phone"
                       width={424}
                       height={856}
@@ -161,7 +162,7 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m3}
+                      src={m2}
                       alt="phone"
                       width={424}
                       height={856}

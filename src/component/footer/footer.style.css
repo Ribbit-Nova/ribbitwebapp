@@ -21,14 +21,17 @@
 .add_q {
     font-size: 16px !important;
     line-height: 1.8;
-    display: flex
-;
+    display: flex;
     gap: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    align-items: center;
 }
 .add_q img{
     position: relative;
-    top: 4px;
+ 
 }
+.logo_footer ul{padding: 0px;}
 
 .input-group-text {
     font-size: 14px;

@@ -320,6 +320,7 @@
 .ribbit_box_text {
     position: relative;
     z-index: 99;
+    order: 2;
 }
 
 .coin_img {
@@ -617,8 +618,14 @@ p.f_text_1 {
 
     .bx_text_2 {
         font-size: 15px;
+        width: 100%;
     }
-
+    .coin_img {
+        position: absolute;
+        right: 27px;
+        top: 109px;
+    }
+    .section_4{    padding-bottom: 60px;}
     .card_gif {
         position: inherit;
 
