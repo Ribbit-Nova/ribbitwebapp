@@ -29,6 +29,7 @@ import k4 from "../asets/img/k4.svg";
 import ic_arrow_left_bk from "../asets/img/ic_arrow_left_bk.svg";
 import ar1 from "../asets/img/ar1.svg";
 import cards from "../asets/img/cards.gif";
+import { useEffect, useState } from "react";
 
 const items = [
   {
@@ -58,16 +59,27 @@ const items = [
 ];
 
 // Split into groups of 4
-const chunkArray = (arr, size) => {
-  const result = [];
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, i + size));
-  }
-  return result;
-};
+
 
 const MultiCardCarousel = () => {
-  const slides = chunkArray(items, 4);
+
+  const [slides, setSlides] = useState();
+  useEffect(()=>{
+    const chunkArray = (arr) => {
+      const result = [];
+      let size = 4;
+    
+      if(window.innerWidth <= 767){
+        size = 1;
+      }
+      
+      for (let i = 0; i < arr.length; i += size) {
+        result.push(arr.slice(i, i + size));
+      }
+      return result;
+    };
+    setSlides(chunkArray(items));
+  },[])
   
 
   return (
@@ -196,7 +208,7 @@ const MultiCardCarousel = () => {
             <Col lg="12">
               <div className="slider_card">
                 <Carousel>
-                  {slides.map((group, idx) => (
+                  {slides?.map((group, idx) => (
                     <Carousel.Item key={idx}>
                       <Row className="px-4">
                         {group.map((item, i) => (
