@@ -4,9 +4,7 @@ import "./footer.style.css";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../asets/img/logo.png";
-import add from "../../asets/img/add.svg";
 import ar1 from "../../asets/img/ar1.svg";
-import phone_1 from "../../asets/img/phone_1.svg";
 
 function footer() {
   return (
@@ -21,15 +19,10 @@ function footer() {
                 {" "}
                 <li className="add_q">
                   {" "}
-                  <Image src={phone_1} alt="map" width={20} height={20} /> +1
-                  302 3420 342 19901
-                </li>
-                <li className="add_q">
-                  {" "}
-                  <Image src={add} alt="map" width={20} height={20} />{" "}
                   Ribbitnova Inc 8 The Green, Ste A, Dover, Delaware Zip Code
                   19901
                 </li>
+                <li className="add_q"> Phone - +1 302 3420 342 </li>
               </ul>
               {/* <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>

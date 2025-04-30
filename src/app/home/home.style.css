@@ -215,20 +215,45 @@
 }
 
 .section_3 .card {
-    border-radius: 24px;
-    border: 2px solid var(--grid-box-colour-dark-mode, #272626);
-    background: #000;
-    padding: 30px;
+    border-radius: 24px !important;
+    border: 2px solid #272626 !important;
+    background: #000 !important;
+    padding: 30px !important;
 }
 
-.section_3 .card-title.h5 {
+.section_3 .card h3 {
     color: #FFF;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.4;
     margin-top: 27px;
+    width: 64%;
+    text-align: left;
 }
+.section_3 .swiper-pagination {
+    position: relative;
+    bottom: 0px;
+    z-index: 99;
+    left: 0px;
+    right: 0px;
+    width: 100% !important;
+    display: flex
+;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    bottom: -26px;
+    margin-bottom: 30px;
+}
+.section_3 .swiper-pagination-bullet {
+    background: #fff;
+    height: 12px;
+    float: left;
+    width: 12px;
+    border-radius: 100px;
+}
+.section_3 .swiper-pagination-bullet-active{background: #9AF26E;}
 
 .section_3 .carousel-control-next {
     display: none;
@@ -268,7 +293,7 @@
 }
 
 .card-img-top {
-    width: 90px;
+    width: 90px !important;
     height: 90px;
 }
 

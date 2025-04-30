@@ -1,6 +1,9 @@
 "use client";
+import { useEffect } from "react";
+import { useState } from "react";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/footer";
+import CardSlider from "../../component/HomeSlider/CardSlider";
 
 import {
   Col,
@@ -58,16 +61,25 @@ const items = [
 ];
 
 // Split into groups of 4
-const chunkArray = (arr, size) => {
-  const result = [];
-  for (let i = 0; i < arr.length; i += size) {
-    result.push(arr.slice(i, i + size));
-  }
-  return result;
-};
 
 const MultiCardCarousel = () => {
-  const slides = chunkArray(items, 4);
+  const [slides, setSlides] = useState();
+  useEffect(() => {
+    const chunkArray = (arr) => {
+      const result = [];
+      let size = 4;
+
+      if (window.innerWidth <= 767) {
+        size = 1;
+      }
+
+      for (let i = 0; i < arr.length; i += size) {
+        result.push(arr.slice(i, i + size));
+      }
+      return result;
+    };
+    setSlides(chunkArray(items));
+  }, []);
 
   return (
     <>
@@ -93,7 +105,7 @@ const MultiCardCarousel = () => {
 
             <Col lg="12">
               <div className="browser_btn">
-                <Link href="">
+                <Link href="/download">
                   {" "}
                   <Image
                     className="btn_iocn"
@@ -103,7 +115,7 @@ const MultiCardCarousel = () => {
                   />{" "}
                   Browser extension
                 </Link>
-                <Link href="">Download mobile app</Link>
+                <Link href="/download">Download mobile app</Link>
               </div>
             </Col>
             <span className="bc_1"></span>
@@ -148,10 +160,11 @@ const MultiCardCarousel = () => {
                       height={856}
                     />
                   </Carousel.Item>
+
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m2}
+                      src={m3}
                       alt="phone"
                       width={424}
                       height={856}
@@ -160,7 +173,7 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m3}
+                      src={m2}
                       alt="phone"
                       width={424}
                       height={856}
@@ -193,25 +206,7 @@ const MultiCardCarousel = () => {
 
             <Col lg="12">
               <div className="slider_card">
-                <Carousel>
-                  {slides.map((group, idx) => (
-                    <Carousel.Item key={idx}>
-                      <Row className="px-4">
-                        {group.map((item, i) => (
-                          <Col md={3} key={i}>
-                            <Card className="mb-4">
-                              <Card.Img variant="top" src={item.img} />
-                              <Card.Body>
-                                <Card.Title>{item.title}</Card.Title>
-                                <Card.Text>{item.text}</Card.Text>
-                              </Card.Body>
-                            </Card>
-                          </Col>
-                        ))}
-                      </Row>
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
+                <CardSlider />
               </div>
             </Col>
           </Row>
@@ -419,7 +414,7 @@ const MultiCardCarousel = () => {
                 <p className="f_text_2">
                   Got any questions? We’ve got answers.
                 </p>
-                <Link href="#">
+                <Link href="/faq">
                   {" "}
                   More FAQs
                   <Image
