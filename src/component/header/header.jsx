@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+
 import classNames from "classnames";
 import { Nav, Navbar, Col, Container, Row } from "react-bootstrap";
 import "./header.style.css";
@@ -8,6 +10,7 @@ import logo from "../../asets/img/logo.png";
 <link rel="icon" href="/favicon.ico" />;
 
 function Header() {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,6 +21,10 @@ function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleClick = () => {
+    router.push("/"); // redirect to /about
+  };
   return (
     <header
       className={classNames("header_menu fixed  transition-all duration-300", {
@@ -29,7 +36,7 @@ function Header() {
         <div className="web_menu">
           <Col>
             <div className="logo_header">
-              <a href="/">
+              <a onClick={handleClick}>
                 <Image src={logo} alt="Logo" width={125} height={30} />
               </a>
             </div>

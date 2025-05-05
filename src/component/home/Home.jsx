@@ -1,9 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import { useState } from "react";
-import Header from "../../component/header/header";
-import Footer from "../../component/footer/footer";
-import CardSlider from "../../component/HomeSlider/CardSlider";
+import Header from "../header/Header";
+import Footer from "../footer/Hooter";
+import CardSlider from "../HomeSlider/CardSlider";
 
 import {
   Col,
