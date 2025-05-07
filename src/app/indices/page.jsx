@@ -1,6 +1,6 @@
 "use client";
 import Header from "../../component/header/Header";
-import Footer from "../../component/footer/Hooter";
+import Footer from "../../component/footer/Footer";
 import Grap from "../../component/grap/Grap";
 
 import { Col, Container, Row, InputGroup, Form } from "react-bootstrap";

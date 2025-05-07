@@ -20,7 +20,12 @@ export default function CandlestickChart() {
 
   // Sample data for different ranges (replace with real data as needed)
   const allData = {
-    "1D": [{ x: new Date("2025-05-02"), y: [135, 140, 130, 138] }],
+    "1D": [
+      { x: new Date("2025-05-02"), y: [135, 140, 130, 138] },
+      { x: new Date("2025-04-26"), y: [100, 120, 95, 115] },
+      { x: new Date("2025-04-27"), y: [115, 125, 110, 120] },
+      { x: new Date("2025-04-28"), y: [120, 130, 118, 128] },
+    ],
     "7D": [
       { x: new Date("2025-04-26"), y: [100, 120, 95, 115] },
       { x: new Date("2025-04-27"), y: [115, 125, 110, 120] },
@@ -44,7 +49,7 @@ export default function CandlestickChart() {
   const options = {
     chart: {
       type: "candlestick",
-      height: 350,
+      height: 216,
       toolbar: { show: true },
     },
     title: {
@@ -63,9 +68,9 @@ export default function CandlestickChart() {
     },
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 767,
         options: {
-          chart: { height: 300 },
+          chart: { height: 250 },
           title: { style: { fontSize: "16px" } },
         },
       },
@@ -103,7 +108,7 @@ export default function CandlestickChart() {
         options={options}
         series={series}
         type="candlestick"
-        height={350}
+        height={216}
         width="100%"
       />
     </div>

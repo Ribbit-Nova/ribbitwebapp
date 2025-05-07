@@ -9,6 +9,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 2px !important;
+    margin-bottom: 10px !important;
 }
 
 .day_list button:hover{
