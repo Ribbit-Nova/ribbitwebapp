@@ -62,7 +62,7 @@ function indices() {
       <section className="section_garp">
         <Container>
           <Row>
-            <Col lg="4">
+            <Col sm="12" lg="4">
               <div className="index_grap">
                 <p className="tx_1">
                   {" "}

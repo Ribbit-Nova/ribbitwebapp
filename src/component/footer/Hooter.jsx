@@ -70,7 +70,7 @@ function footer() {
                   <Link href="#">Mobile App</Link>
                 </li>
                 <li>
-                  <Link href="#">Indices</Link>
+                  <Link href="/features">features</Link>
                 </li>
               </ul>
             </div>

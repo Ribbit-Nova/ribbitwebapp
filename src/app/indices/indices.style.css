@@ -1,8 +1,7 @@
 /* section_1  */
 .section_1 {
     background: #000;
-    display: flex
-;
+    display: flex;
     align-items: center;
     position: relative;
     padding-top: 200px;
@@ -60,17 +59,21 @@
     position: absolute;
 
 }
+
 .search_form ::placeholder {
     color: #B2B2BB !important;
-    opacity: 1; /* Firefox */
-  }
-  .doc_btn {
+    opacity: 1;
+    /* Firefox */
+}
+
+.doc_btn {
     float: left;
     width: 100%;
     text-align: center;
     margin-top: 40px;
 }
-.doc_btn a{
+
+.doc_btn a {
     border-radius: 14px;
     background: #A9FF7E;
     padding: 14px 20px;
@@ -94,12 +97,12 @@
     background: no-repeat;
     border: none;
 }
+
 .search_form {
     border-radius: 40px;
     border: 1px solid #232323;
     background: #000;
-    display: flex
-;
+    display: flex;
     justify-content: space-around;
     width: 331px;
     height: 56px;
@@ -107,6 +110,7 @@
     margin: auto;
     align-items: center;
 }
+
 .section_text {
     font-size: 40px;
     font-style: normal;
@@ -178,16 +182,17 @@
     padding: 20px;
     margin-bottom: 28px;
 }
+
 .tx_1 {
     color: #FFF;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 27.5px;
-    display: flex
-;
+    display: flex;
     gap: 8px;
 }
+
 .tx_2 {
     color: #FFF;
     font-size: 20px;
@@ -195,27 +200,74 @@
     font-weight: 600;
     line-height: 27.5px;
 }
+
 .qnt ul {
     padding: 0px;
-    display: flex
-;
-gap: 10px;
+    display: flex;
+    gap: 10px;
     flex-direction: row;
 
 }
-.qnt li{
+
+.qnt li {
     border-radius: 3.348px;
     background: #272626;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
     gap: 3.348px;
-    display: flex
-;
-padding: 5.021px 5.858px;
+    display: flex;
+    padding: 5.021px 5.858px;
     align-items: center;
 
 }
-.cd1{color: #828A99;}
-.cd2{color: #A9FF7E;}
+
+.cd1 {
+    color: #828A99;
+}
+
+.cd2 {
+    color: #A9FF7E;
+}
+
 /* section_garp */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .input-group {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .search_form {
+        height: 45px;
+        width: 100%;
+    }
+
+    .search_form input.form-control {
+        font-size: 15px;
+    }
+
+    .section_1 {
+        padding-bottom: 70px;
+        padding-top: 100px;
+    }
+
+    .section_text {
+        font-size: 30px;
+        width: 100%;
+        line-height: 1.4;
+    }
+
+    .pera_list {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .qnt ul{    flex-wrap: wrap;}
+    .index_grap{    padding: 10px;}
+}
