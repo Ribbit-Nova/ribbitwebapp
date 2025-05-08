@@ -46,10 +46,10 @@ function Header() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="/indices">Indices</Nav.Link>
+                  <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="#">Blog</Nav.Link>
                   <Nav.Link href="#">Documents</Nav.Link>
-                  <Nav.Link href="/faq">Faq</Nav.Link>
+                  <Nav.Link href="/indices">Indices</Nav.Link>
                   <Nav.Link
                     href="https://t.me/abhinav_eth"
                     className="get_call"
