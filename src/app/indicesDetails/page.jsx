@@ -1,13 +1,10 @@
 "use client";
-import Header from "../../component/header/Header";
+import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
 import Grapdetails from "../../component/grapDetails/Grapdetails";
 
-import { Col, Container, Row, InputGroup, Form } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "./indices_details.style.css";
-import Link from "next/link";
-import Image from "next/image";
-import rb from "../../asets/img/rb.png";
 
 function indices() {
   return (
