@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { useState } from "react";
-import Header from "../header/Header";
+import Header from "../header/header";
 import Footer from "../footer/Footer";
 import CardSlider from "../HomeSlider/CardSlider";
 
