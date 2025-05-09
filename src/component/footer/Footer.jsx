@@ -22,7 +22,7 @@ function footer() {
                   Ribbitnova Inc 8 The Green, Ste A, Dover, Delaware Zip Code
                   19901
                 </li>
-                <li className="add_q"> Phone: +1 302 3420 342 </li>
+                <li className="add_q"> Phone: +1 302 305 2642</li>
               </ul>
               {/* <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>
