@@ -49,9 +49,8 @@ function Header() {
                   <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="#">Blog</Nav.Link>
                   <Nav.Link href="#">Documents</Nav.Link>
-                  <Nav.Link href="/indices">Indices</Nav.Link>
                   <Nav.Link
-                    href="https://t.me/abhinav_eth"
+                    href="https://discord.gg/Ebk6rqTS"
                     className="get_call"
                   >
                     Get Support
