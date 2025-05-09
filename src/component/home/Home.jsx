@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Header from "../header/Header";
-import Footer from "../footer/Hooter";
+import Footer from "../footer/Footer";
 import CardSlider from "../HomeSlider/CardSlider";
 
 import {

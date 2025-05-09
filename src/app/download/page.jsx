@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "../../component/header/Header";
-import Footer from "../../component/footer/Hooter";
+import Footer from "../../component/footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import "./download.style.css";
 import Link from "next/link";

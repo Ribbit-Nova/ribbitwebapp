@@ -1,0 +1,18 @@
+.day_list button {
+    background: no-repeat;
+    border: none;
+   
+    padding: 9.596px 11.196px !important;
+}
+
+.day_list .mb-4.flex.flex-wrap.gap-2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px !important;
+    margin-bottom: 10px !important;
+}
+
+.day_list button:hover{
+    border-radius: 6.397px;
+    background: var(--grid-box-colour-dark-mode, #272626);
+}

@@ -108,7 +108,7 @@ export default function CandlestickChart() {
         options={options}
         series={series}
         type="candlestick"
-        height={216}
+        height={615}
         width="100%"
       />
     </div>

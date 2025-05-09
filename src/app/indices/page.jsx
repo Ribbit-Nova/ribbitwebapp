@@ -1,6 +1,6 @@
 "use client";
 import Header from "../../component/header/Header";
-import Footer from "../../component/footer/Hooter";
+import Footer from "../../component/footer/Footer";
 import Grap from "../../component/grap/Grap";
 
 import { Col, Container, Row, InputGroup, Form } from "react-bootstrap";
@@ -62,7 +62,7 @@ function indices() {
       <section className="section_garp">
         <Container>
           <Row>
-            <Col lg="4">
+            <Col sm="12" lg="4">
               <div className="index_grap">
                 <p className="tx_1">
                   {" "}
