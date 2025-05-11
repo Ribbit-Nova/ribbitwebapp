@@ -1,6 +1,8 @@
-
-
 /* section_8 */
+.faq_box {
+    text-align: center;
+}
+
 .section_8 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -10,21 +12,24 @@
 }
 
 p.f_text_1 {
-    color: #FFF;
-    font-size: 37px;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 600;
-    margin-bottom: 28px;
-    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    line-height: 54px;
 }
 
 .f_text_2 {
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 0px;
+    color: #fff;
+    text-align: center;
     margin-bottom: 40px;
-    color: #828A99;
+    margin-top: 20px;
 }
 
 .faq_box a {
@@ -150,7 +155,7 @@ p.f_text_1 {
     }
 
     .section_text_2 {
-      
+
         font-size: 25px;
         width: 100%;
         line-height: 1.4;
@@ -209,32 +214,63 @@ p.f_text_1 {
     .trck_text a {
         margin-bottom: 30px;
     }
+
     .trck_text a {
-       
+
         font-size: 16px;
         height: 56px;
         padding: 0px 18px;
     }
-    .trck_text_img img{height: 300px;}
-    section.section_5{    border-radius: 0px;}
+
+    .trck_text_img img {
+        height: 300px;
+    }
+
+    section.section_5 {
+        border-radius: 0px;
+    }
+
     .section_8 {
         padding-top: 40px;
         padding-bottom: 40px;
         border-radius: 0px;
-        background:#010101;
-      
+        background: #010101;
+
     }
-    .f_text_2{    margin-bottom: 20px;}
-    p.f_text_1{    font-size: 25px;       margin-bottom: 10px;   line-height: 1.4;}
-    .mobile_img img{          height: auto;
-        max-width: 70% !important;}
-    
-  .bc_1{width: 100%;}
-  img{max-width: 100%;}
-  .bc_3 {width: 77%;
-    left: 0px;
-    right: 0px;
-    margin:
-auto;}
-    .bc_2{width: 100%;left: 0px;}
+
+    .f_text_2 {
+        margin-bottom: 20px;
+    }
+
+    p.f_text_1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .mobile_img img {
+        height: auto;
+        max-width: 70% !important;
+    }
+
+    .bc_1 {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .bc_3 {
+        width: 77%;
+        left: 0px;
+        right: 0px;
+        margin:
+            auto;
+    }
+
+    .bc_2 {
+        width: 100%;
+        left: 0px;
+    }
 }

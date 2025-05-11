@@ -25,9 +25,7 @@ function Faq() {
           <Row>
             <Col lg="12">
               <div className="faq_box">
-                <p className="f_text_1">
-                  Frequently asked<br></br> questions
-                </p>
+                <p className="f_text_1">Frequently asked questions</p>
                 <p className="f_text_2">
                   Got any questions? We’ve got answers.
                 </p>
