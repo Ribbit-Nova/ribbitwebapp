@@ -1,4 +1,8 @@
 /* section_8 */
+.section_8 a {
+    margin-left: 16px;
+    color: #9af26e;
+}
 .faq_box {
     text-align: center;
 }
@@ -39,8 +43,7 @@ p.f_text_1 {
     margin-right: auto;
     padding: 30px;
     margin-top: 40px;
-    background: url(../../asets/img/bg.svg);
-    background-attachment: fixed;
+   
 }
 .terms_c1 h1{
     font-size: 35px;
@@ -78,5 +81,24 @@ p.f_text_1 {
         text-align: center;
         line-height: 1.4;
     }
+    .container {
+        width: 90%;
+    }
+    .terms_c1 h1 {
+        font-size: 22px;}
+    .terms_box{              margin-top: 15px;    padding: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;}
+    .section_8 {
+        padding-top: 20px;}
+        .terms_c1 p{font-size: 14px;}
+        p.f_text_1{        width: 100%; font-size: 25px; }
 
+.terms_c1 li {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    list-style: disc;
+    line-height: 1.4;
+}
 }

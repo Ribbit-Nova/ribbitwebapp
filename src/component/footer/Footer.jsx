@@ -16,9 +16,7 @@ function footer() {
               {" "}
               <Image src={logo} alt="Logo" width={125} height={30} />
               <ul>
-                <li className="add_q">
-                  Ribbitnova Inc
-                </li>
+                <li className="add_q">Ribbitnova Inc</li>
                 <li className="add_q">
                   8 The Green, Ste A, Dover, Delaware 19901
                 </li>
@@ -47,10 +45,10 @@ function footer() {
                   <Link href="#"> Whitepaper</Link>
                 </li>
                 <li>
-                  <Link href="#">Terms</Link>
+                  <Link href="/terms_conditions">Terms</Link>
                 </li>
                 <li>
-                  <Link href="#">Privacy Policy</Link>
+                  <Link href="/privacy_policy">Privacy Policy</Link>
                 </li>
               </ul>
             </div>
