@@ -52,7 +52,7 @@ function Terms() {
                 </div>
 
                 <div className="terms_c1">
-                  <h1>3. Description of Services</h1>
+                  <h1>1. Description of Services</h1>
                   <p>
                     Ribbit provides a range of tools to help users interact with
                     digital assets and blockchain-based services. The Services
@@ -100,7 +100,7 @@ function Terms() {
                     Ribbit may add, modify, or remove features at any time at
                     its sole discretion.
                   </p>
-                  <h1>4. Non-Custodial Wallet Disclaimer</h1>
+                  <h1>2. Non-Custodial Wallet Disclaimer</h1>
                   <p>
                     Ribbit is a non-custodial wallet. This means you are solely
                     responsible for securing your wallet, including any private
@@ -120,7 +120,7 @@ function Terms() {
                     loss, theft, or unauthorized access resulting from the loss
                     or compromise of your credentials.
                   </p>
-                  <h1>5. User Responsibilities</h1>
+                  <h1>3. User Responsibilities</h1>
                   <p>By using the Services, you agree to:</p>
                   <ul>
                     <li>
@@ -153,7 +153,7 @@ function Terms() {
                     and that you are responsible for verifying all details
                     before initiating any transaction.
                   </p>
-                  <h1>6. Third-Party Services and dApps</h1>
+                  <h1>4. Third-Party Services and dApps</h1>
                   <p>
                     Ribbit may allow you to access third-party services,
                     including decentralized applications (“dApps”),
@@ -174,7 +174,7 @@ function Terms() {
                     for any loss, damage, or dispute arising from your use of
                     third-party services accessed through the app or extension.
                   </p>
-                  <h1>7. Payments, On-Ramps, and Off-Ramps</h1>
+                  <h1>5. Payments, On-Ramps, and Off-Ramps</h1>
                   <p>
                     Ribbit may provide access to features that allow you to buy
                     or sell digital assets using fiat currency (“on-ramp” and
@@ -201,7 +201,7 @@ function Terms() {
                     payment partners and card issuers before using these
                     services.
                   </p>
-                  <h1>8. KYC and Compliance</h1>
+                  <h1>6. KYC and Compliance</h1>
                   <p>
                     Some features within the Ribbit platform, such as access to
                     the Ribbit payment card, on-ramp or off-ramp services, and
@@ -229,7 +229,7 @@ function Terms() {
                     Services, or terminate your use of the platform to remain in
                     compliance.
                   </p>
-                  <h1>9. Token and Crypto Activity Disclaimer</h1>
+                  <h1>7. Token and Crypto Activity Disclaimer</h1>
                   <p>
                     Ribbit provides tools to interact with blockchain networks,
                     but we do not issue, endorse, or guarantee the value of any
@@ -255,7 +255,7 @@ function Terms() {
                     assets.
                   </p>
 
-                  <h1>10. Prohibited Activities</h1>
+                  <h1>8. Prohibited Activities</h1>
                   <p>
                     By using the Services, you agree not to engage in any of the
                     following activities:
@@ -305,7 +305,7 @@ function Terms() {
                     Services, if any prohibited activity is detected.
                   </p>
 
-                  <h1>11. Intellectual Property</h1>
+                  <h1>9. Intellectual Property</h1>
                   <p>
                     All content and materials made available through the
                     Services, including but not limited to the Ribbit name,
@@ -331,7 +331,7 @@ function Terms() {
                     are the property of their respective owners and used with
                     permission or under license where applicable.
                   </p>
-                  <h1>12. Disclaimer of Warranties</h1>
+                  <h1>10. Disclaimer of Warranties</h1>
                   <p>
                     The Services are provided on an “as is” and “as available”
                     basis, without warranties of any kind, either express or
@@ -356,7 +356,7 @@ function Terms() {
                     transactions made through the Services are irreversible and
                     may carry financial risk.
                   </p>
-                  <h1>13. Limitation of Liability</h1>
+                  <h1>11. Limitation of Liability</h1>
                   <p>
                     To the maximum extent permitted by law, Ribbit Technologies
                     Limited and its affiliates, directors, officers, employees,
@@ -402,7 +402,7 @@ function Terms() {
                     of certain damages, so these limitations may not apply to
                     you in full.
                   </p>
-                  <h1>14. Indemnification</h1>
+                  <h1>12. Indemnification</h1>
                   <p>
                     You agree to defend, indemnify, and hold harmless Ribbit
                     Technologies Limited, its affiliates, and their respective
@@ -436,7 +436,7 @@ function Terms() {
                     that case, you agree to cooperate with our defense as
                     reasonably requested.
                   </p>
-                  <h1>15. Modifications to the Services or Terms</h1>
+                  <h1>13. Modifications to the Services or Terms</h1>
                   <p>
                     We may modify, update, or discontinue parts of the Services
                     at any time, with or without notice. This includes adding or
@@ -456,7 +456,7 @@ function Terms() {
                     you do not agree to the revised Terms, you must stop using
                     the Services.
                   </p>
-                  <h1>16. Termination</h1>
+                  <h1>14. Termination</h1>
                   <p>
                     You may stop using the Services at any time and are
                     responsible for properly securing or exporting any wallet
@@ -489,7 +489,7 @@ function Terms() {
                     limited to, ownership, disclaimers, limitation of liability,
                     and indemnification) will remain in effect.
                   </p>
-                  <h1>17. Governing Law and Dispute Resolution</h1>
+                  <h1>15. Governing Law and Dispute Resolution</h1>
                   <p>
                     These Terms and any dispute or claim arising out of or in
                     connection with the Services shall be governed by and
