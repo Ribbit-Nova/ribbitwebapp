@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import b1 from "../../asets/img/b1.jpg";
 import user from "../../asets/img/user.png";
+import sq from "../../asets/img/sq.svg";
 
 function indices() {
   return (
@@ -23,10 +24,6 @@ function indices() {
                   Explore the latest topics, trends and insights with in Crypto
                   and Web3 with Ribbit
                 </p>
-
-                <div className="doc_btn">
-                  <Link href="">Subscribe</Link>
-                </div>
               </div>
             </Col>
           </Row>
@@ -470,6 +467,34 @@ function indices() {
           </Row>
         </Container>
       </section>
+
+      <section className="section_blog_subscribe">
+        <Row>
+          <Col lg="5" sm="12">
+            <div className="sub_img">
+              <Image src={sq} alt="img" width={570} height={448} />
+            </div>
+          </Col>
+          <Col lg="7" sm="12">
+            <div className="sub_text">
+              <h2>Let us hope into your email!</h2>
+              <p>
+                Subscribe now to stay informed with the latest news and updates
+                from Ribbit.
+              </p>
+              <InputGroup className="email_input">
+                <Form.Control
+                  placeholder="Enter your E-mail"
+                  aria-label="email"
+                  aria-describedby="basic-addon1"
+                />
+                <button>Subscribe</button>
+              </InputGroup>
+            </div>
+          </Col>
+        </Row>
+      </section>
+
       <Footer />
     </>
   );

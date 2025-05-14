@@ -7,8 +7,8 @@
     padding-top: 200px;
     padding-bottom: 100px;
     background-attachment: fixed;
-    background-size: cover;
     background: url(../../asets/img/bg.svg);
+    background-size: cover;
 
 }
 
@@ -292,10 +292,82 @@
 .page_na {
     margin-top: 40px;
 }
+.section_blog_subscribe {
+    background: #181818;
+    float: left;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.sub_img img{
+    border-radius: 16px 0px 0px 16px;
+}
+.sub_text {
+    width: 70%;
+    padding-left: 60px;
+    margin-top: 10%;
+}
+.sub_text h2{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sub_text p{
+    color: #828999;
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+.sub_text input{
+    background: no-repeat;
+    border: 1px solid #828999;
+    color: #fff;
+    height: 59px;
+    border-radius: 8px !important;
+}
 
-/* section_log_list */
+.sub_text button{
+    border-radius: 8px !important;
+    background: #9AF26E;
+    font-weight: 600 !important;
+    padding: 8px;
+    height: 59px;
+    width: 145px;
+    z-index: 99;
+    position: relative;
+    font-size: 18px;
+    left: -19px;
+    border: none;
+}
+.sub_text input:focus {
+    background:none !important;
+    outline: none;
+    color: #fff;
+    border-color: #828999 !important;
+    box-shadow: none !important;
+  }
 
+  .sub_text input[placeholder], [placeholder], *[placeholder] {
+    color: #828999 !important;
+}
+.sub_text ::placeholder { /* Most modern browsers support this now. */
+    color:    #828999;
+ }
 @media only screen and (max-width: 767px) {
+    .sub_text button{    width: 119px;
+        z-index: 99;
+        font-size: 16px;}
+    .section_blog_subscribe{    padding: 25px;}
+    .sub_img img {
+      
+        height: 100%;
+    }
+    .sub_text {
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 25px;
+    }
+    .sub_text h2 {
+        font-size: 25px;}
     .container {
         width: 90%;
     }

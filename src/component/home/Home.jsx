@@ -18,9 +18,6 @@ import Link from "next/link";
 import Image from "next/image";
 import an from "../../asets/img/an.gif";
 import iconsn from "../../asets/img/icons.png";
-import m1 from "../../asets/img/m1.png";
-import m2 from "../../asets/img/m2.png";
-import m3 from "../../asets/img/m3.png";
 import supra from "../../asets/img/supra.svg";
 import Layer_1 from "../../asets/img/Layer_1.png";
 import graphic from "../../asets/img/graphic.png";
@@ -32,6 +29,10 @@ import k4 from "../../asets/img/k4.svg";
 import ic_arrow_left_bk from "../../asets/img/ic_arrow_left_bk.svg";
 import ar1 from "../../asets/img/ar1.svg";
 import cards from "../../asets/img/cards.gif";
+import homepage from "../../asets/img/homepage.svg";
+import browser from "../../asets/img/browser.svg";
+import wallet from "../../asets/img/wallet.svg";
+import wallet2 from "../../asets/img/wallet2.svg";
 
 const items = [
   {
@@ -154,7 +155,7 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m1}
+                      src={homepage}
                       alt="phone"
                       width={424}
                       height={856}
@@ -164,8 +165,8 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m3}
-                      alt="phone"
+                      src={browser}
+                      alt="browser"
                       width={424}
                       height={856}
                     />
@@ -173,7 +174,17 @@ const MultiCardCarousel = () => {
                   <Carousel.Item>
                     <Image
                       className="mobile_01"
-                      src={m2}
+                      src={wallet}
+                      alt="phone"
+                      width={424}
+                      height={856}
+                    />
+                  </Carousel.Item>
+
+                  <Carousel.Item>
+                    <Image
+                      className="mobile_01"
+                      src={wallet2}
                       alt="phone"
                       width={424}
                       height={856}
