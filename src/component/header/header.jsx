@@ -48,7 +48,6 @@ function Header() {
                 <Nav className="me-auto">
                   <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="/indices">Indices</Nav.Link>
-                  <Nav.Link href="/blog">Blog</Nav.Link>
                   <Nav.Link target="_blank" href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper">Documents</Nav.Link>
                   <Nav.Link target="_blank" href="https://discord.gg/Ebk6rqTS" className="get_call">
                     Get Support
