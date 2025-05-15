@@ -354,7 +354,7 @@
  }
 @media only screen and (max-width: 767px) {
     .sub_text button{    width: 119px;
-        z-index: 99;
+        z-index: 99;    
         font-size: 16px;}
     .section_blog_subscribe{    padding: 25px;}
     .sub_img img {
