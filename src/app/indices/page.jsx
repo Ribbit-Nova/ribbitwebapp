@@ -73,7 +73,7 @@ function Indices() {
                       </li>
                     </ul>
                   </div>
-                  <Graph address={index.address} />
+                  <Grap address={index.address} />
                 </div>
               </Col>
             ))}
