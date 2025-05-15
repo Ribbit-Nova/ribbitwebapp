@@ -10,7 +10,6 @@ import {
   Container,
   Row,
   Carousel,
-  Card,
   Accordion,
 } from "react-bootstrap";
 import "./home.style.css";
@@ -20,15 +19,12 @@ import an from "../../asets/img/an.gif";
 import iconsn from "../../asets/img/icons.png";
 import supra from "../../asets/img/supra.svg";
 import Layer_1 from "../../asets/img/Layer_1.png";
-import graphic from "../../asets/img/graphic.png";
-import coin from "../../asets/img/coin.gif";
 import phone_1 from "../../asets/img/phone_1.png";
 import k1 from "../../asets/img/k1.svg";
 import k2 from "../../asets/img/k2.svg";
 import k4 from "../../asets/img/k4.svg";
 import ic_arrow_left_bk from "../../asets/img/ic_arrow_left_bk.svg";
 import ar1 from "../../asets/img/ar1.svg";
-import cards from "../../asets/img/cards.gif";
 import homepage from "../../asets/img/homepage.svg";
 import browser from "../../asets/img/browser.svg";
 import wallet from "../../asets/img/wallet.svg";
