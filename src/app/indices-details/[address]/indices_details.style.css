@@ -177,7 +177,7 @@
 
 /* section_garp */
 
-.index_grap {
+.indexgraph {
     border-radius: 16px;
     border: 2px solid #232323;
     padding: 20px;
@@ -255,7 +255,7 @@
     color: #F24B4B;
 }
 
-.index_grap_tabel {
+.indexgraph_tabel {
     border-radius: 16px;
     border: 2px solid #232323;
     padding: 20px;
@@ -296,13 +296,13 @@ p.gr_hd2 {
     color: #fff;
 }
 
-.index_grap_tabel {
+.indexgraph_tabel {
     border-radius: 16px;
     border: 2px solid #232323;
     padding: 20px;
 }
 
-.index_grap_tabel li {
+.indexgraph_tabel li {
     display: flex;
     gap: 66px;
     justify-content: space-between;
@@ -312,7 +312,7 @@ p.gr_hd2 {
 
 }
 
-.index_grap_tabel li span:first-child {
+.indexgraph_tabel li span:first-child {
     color: #828A99;
     font-size: 12px;
     font-style: normal;
@@ -322,7 +322,7 @@ p.gr_hd2 {
     padding-bottom: 20px;
 }
 
-.index_grap_tabel li span:last-child {
+.indexgraph_tabel li span:last-child {
     color: #fff;
     font-size: 12px;
     font-style: normal;
@@ -333,16 +333,16 @@ p.gr_hd2 {
     padding-bottom: 20px;
 }
 
-.index_grap_tabel ul {
+.indexgraph_tabel ul {
     padding: 0px;
 }
-.index_grap_box_text {
+.indexgraph_box_text {
     border-radius: 16px;
     border: 2px solid #232323;
     margin-bottom: 40px;
     padding: 30px;
 }
-.index_grap_box_text h1{
+.indexgraph_box_text h1{
     color: #FFF;
     font-size: 20px;
     font-style: normal;
@@ -351,14 +351,14 @@ p.gr_hd2 {
     letter-spacing: 0.2px;
     margin-bottom: 30px;
 }
-.index_grap_box_text ul {
+.indexgraph_box_text ul {
     padding: 0px;
     display: flex
 ;
     gap: 31px;
 }
 
-.index_grap_box_text li span:first-child {
+.indexgraph_box_text li span:first-child {
     color: #828A99;
     font-size: 12px;
     font-style: normal;
@@ -370,7 +370,7 @@ p.gr_hd2 {
     float: left;
 }
 
-.index_grap_box_text li span:last-child {
+.indexgraph_box_text li span:last-child {
     color: #fff;
     font-size: 12px;
     font-style: normal;
@@ -425,14 +425,14 @@ p.gr_hd2 {
         flex-wrap: wrap;
     }
 
-    .index_grap {
+    .indexgraph {
         padding: 10px;
     }
     .search_form_box{width: 100%; margin-top: 20px; 
         float: left;}
     .cunt_p {
         font-size: 35px;}   
-        .index_grap_box_text ul {
+        .indexgraph_box_text ul {
           
             flex-wrap: wrap;}
 }

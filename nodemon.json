@@ -1,0 +1,12 @@
+{
+    "watch": [
+        "src",
+        "pages",
+        "components"
+    ],
+    "ext": "js,jsx,css",
+    "ignore": [
+        "node_modules"
+    ],
+    "exec": "next dev"
+}
