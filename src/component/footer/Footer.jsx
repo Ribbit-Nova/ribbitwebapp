@@ -42,13 +42,13 @@ function footer() {
               <p>Company</p>
               <ul>
                 <li>
-                  <Link href="#"> Whitepaper</Link>
+                  <Link target="_blank" href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"> Whitepaper</Link>
                 </li>
                 <li>
-                  <Link href="/terms_conditions">Terms</Link>
+                  <Link href="/terms-conditions">Terms</Link>
                 </li>
                 <li>
-                  <Link href="/privacy_policy">Privacy Policy</Link>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
                 </li>
               </ul>
             </div>
