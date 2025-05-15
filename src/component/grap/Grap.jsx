@@ -4,47 +4,43 @@ import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import "./grap.style.css";
 
-// Dynamically import ApexChart to avoid SSR window error
+// Dynamically import ApexCharts
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
-export default function CandlestickChart() {
-  const [width, setWidth] = useState(0);
+const getTimeRange = (daysAgo) => {
+  const now = new Date();
+  const start = new Date(now.getTime() - daysAgo * 24 * 60 * 60 * 1000);
+  return [start.getTime(), now.getTime()];
+};
+
+export default function Grap({ address }) {
   const [selectedRange, setSelectedRange] = useState("1D");
+  const [seriesData, setSeriesData] = useState([]);
+
+  const fetchChartData = async (days) => {
+    const [start, end] = getTimeRange(days);
+    try {
+      const res = await fetch(
+        `https://testnet.ribbitwallet.com/indices/history/${address}?start_time=${start}&end_time=${end}`
+      );
+      const json = await res.json();
+      const formatted = Array.isArray(json)
+        ? json.map((point) => ({
+            x: new Date(point.timestamp),
+            y: [point.open, point.high, point.low, point.close],
+          }))
+        : [];
+      setSeriesData(formatted);
+    } catch (err) {
+      console.error("Error fetching chart data:", err);
+      setSeriesData([]);
+    }
+  };
 
   useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Sample data for different ranges (replace with real data as needed)
-  const allData = {
-    "1D": [
-      { x: new Date("2025-05-02"), y: [135, 140, 130, 138] },
-      { x: new Date("2025-04-26"), y: [100, 120, 95, 115] },
-      { x: new Date("2025-04-27"), y: [115, 125, 110, 120] },
-      { x: new Date("2025-04-28"), y: [120, 130, 118, 128] },
-    ],
-    "7D": [
-      { x: new Date("2025-04-26"), y: [100, 120, 95, 115] },
-      { x: new Date("2025-04-27"), y: [115, 125, 110, 120] },
-      { x: new Date("2025-04-28"), y: [120, 130, 118, 128] },
-      { x: new Date("2025-04-29"), y: [128, 135, 125, 130] },
-      { x: new Date("2025-04-30"), y: [130, 140, 128, 138] },
-      { x: new Date("2025-05-01"), y: [138, 142, 132, 135] },
-      { x: new Date("2025-05-02"), y: [135, 140, 130, 138] },
-    ],
-    "1M": Array.from({ length: 30 }, (_, i) => {
-      const date = new Date("2025-04-01");
-      date.setDate(date.getDate() + i);
-      const base = 100 + i;
-      return {
-        x: date,
-        y: [base, base + 10, base - 5, base + 2],
-      };
-    }),
-  };
+    const days = selectedRange === "1D" ? 1 : selectedRange === "7D" ? 7 : 30;
+    fetchChartData(days);
+  }, [selectedRange, address]);
 
   const options = {
     chart: {
@@ -80,7 +76,7 @@ export default function CandlestickChart() {
   const series = [
     {
       name: "Price",
-      data: allData[selectedRange],
+      data: seriesData,
     },
   ];
 
