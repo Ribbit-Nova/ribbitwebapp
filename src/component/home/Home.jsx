@@ -33,6 +33,8 @@ import homepage from "../../asets/img/homepage.svg";
 import browser from "../../asets/img/browser.svg";
 import wallet from "../../asets/img/wallet.svg";
 import wallet2 from "../../asets/img/wallet2.svg";
+import card_graphic from "../../asets/img/Card-graphic.gif";
+import real_world_rewards from "../../asets/img/Real-world-rewards.gif";
 
 const items = [
   {
@@ -246,8 +248,8 @@ const MultiCardCarousel = () => {
                   {" "}
                   <Image
                     className="card_gif"
-                    src={cards}
-                    alt="cards"
+                    src={card_graphic}
+                    alt="card payment"
                     width={197}
                     height={218}
                   />{" "}
@@ -266,17 +268,10 @@ const MultiCardCarousel = () => {
                   {" "}
                   <Image
                     className="card_gif"
-                    src={graphic}
-                    alt="graphic"
+                    src={real_world_rewards}
+                    alt="real world rewards"
                     width={163}
                     height={182}
-                  />{" "}
-                  <Image
-                    className="coin_img"
-                    src={coin}
-                    alt="coin"
-                    width={78}
-                    height={78}
                   />{" "}
                 </div>
               </div>

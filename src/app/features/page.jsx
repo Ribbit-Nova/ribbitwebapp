@@ -5,9 +5,6 @@ import {
   Col,
   Container,
   Row,
-  Carousel,
-  Card,
-  Accordion,
 } from "react-bootstrap";
 import "./features.style.css";
 import Link from "next/link";
@@ -18,10 +15,9 @@ import graphic1 from "../../asets/img/graphic1.svg";
 import dex_logos from "../../asets/img/dex_logos.png";
 import graphic3 from "../../asets/img/graphic3.svg";
 import graphic4 from "../../asets/img/graphic4.svg";
-import c1 from "../../asets/img/c1.gif";
-import card from "../../asets/img/card.svg";
-import coin from "../../asets/img/coin.gif";
-import graphic from "../../asets/img/graphic.png";
+import dapps_browser from "../../asets/img/dapps-browser.gif";
+import card_graphic from "../../asets/img/Card-graphic.gif";
+import real_world_rewards from "../../asets/img/Real-world-rewards.gif";
 import hotel from "../../asets/img/hotel.png";
 import graphic5 from "../../asets/img/graphic5.png";
 import graphic6 from "../../asets/img/graphic6.png";
@@ -190,8 +186,8 @@ function Fatures() {
                   {" "}
                   <Image
                     className="card_gif"
-                    src={c1}
-                    alt="c1"
+                    src={dapps_browser}
+                    alt="dapps-browser"
                     width={48}
                     height={48}
                   />{" "}
@@ -231,8 +227,8 @@ function Fatures() {
                   {" "}
                   <Image
                     className="card_gif"
-                    src={card}
-                    alt="card"
+                    src={card_graphic}
+                    alt="Card Payment"
                     width={400}
                     height={218}
                   />{" "}
@@ -251,17 +247,10 @@ function Fatures() {
                   {" "}
                   <Image
                     className="card_gif"
-                    src={graphic}
-                    alt="graphic"
+                    src={real_world_rewards}
+                    alt="Real World Rewards"
                     width={230}
                     height={182}
-                  />{" "}
-                  <Image
-                    className="coin_img"
-                    src={coin}
-                    alt="coin"
-                    width={78}
-                    height={78}
                   />{" "}
                 </div>
               </div>

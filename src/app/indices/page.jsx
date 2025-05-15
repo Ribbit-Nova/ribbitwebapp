@@ -50,7 +50,7 @@ function Indices() {
           <Row>
             {indices.map((index, idx) => (
               <Col lg="4" key={idx}>
-                <div className="indexgraph">
+                <div className="index_graph">
                 <Link href={`/indices-details/${index.address}`} style={{ textDecoration: 'none' }}>
                   <p className="tx_1">
                     <Image src={rb} alt="icon" width={28} height={28} /> {index.name}
@@ -73,7 +73,7 @@ function Indices() {
                       </li>
                     </ul>
                   </div>
-                  <Grap address={index.address} />
+                  <Graph address={index.address} />
                 </div>
               </Col>
             ))}

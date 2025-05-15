@@ -87,14 +87,14 @@ function IndicesDetailPage() {
         <Container>
           <Row>
             <Col sm="12" lg="8">
-              <div className="indexgraph">
+              <div className="index_graph">
                 <Graphdetails address={address} />
               </div>
             </Col>
 
             <Col lg="4">
               <Col lg="12">
-                <div className="indexgraph_tabel">
+                <div className="index_graph_tabel">
                   <ul>
                     <li>
                       <span>24h Range</span>
@@ -105,7 +105,7 @@ function IndicesDetailPage() {
               </Col>
 
               <Col sm="12" lg="12">
-                <div className="indexgraph_tabel">
+                <div className="index_graph_tabel">
                   <p className="gr_hd">Constituents</p>
                   <p className="gr_hd2">
                     <span>Asset</span> <span>Weight</span>
@@ -122,7 +122,7 @@ function IndicesDetailPage() {
             </Col>
 
             <Col sm="12" lg="12">
-              <div className="indexgraph_box_text">
+              <div className="index_graph_box_text">
                 <h1>Onchain transactions of the index</h1>
                 <ul>
                   <li>

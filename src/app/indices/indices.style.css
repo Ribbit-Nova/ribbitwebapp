@@ -176,7 +176,7 @@
 
 /* section_garp */
 
-.indexgraph {
+.index_graph {
     border-radius: 16px;
     border: 2px solid #232323;
     padding: 20px;
@@ -269,5 +269,5 @@
         line-height: 1.4;
     }
     .qnt ul{    flex-wrap: wrap;}
-    .indexgraph{    padding: 10px;}
+    .index_graph{    padding: 10px;}
 }
