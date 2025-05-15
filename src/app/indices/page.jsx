@@ -51,12 +51,12 @@ function Indices() {
             {indices.map((index, idx) => (
               <Col lg="4" key={idx}>
                 <div className="index_graph">
-                <Link href={`/indices-details/${index.address}`} style={{ textDecoration: 'none' }}>
-                  <p className="tx_1">
-                    <Image src={rb} alt="icon" width={28} height={28} /> {index.name}
-                  </p>
+                  <Link href={`/indices-details/${index.address}`} style={{ textDecoration: 'none' }}>
+                    <p className="tx_1">
+                      <Image src={rb} alt="icon" width={28} height={28} /> {index.name}
+                    </p>
                   </Link>
-                  <p className="tx_2">{index.price.toFixed(2)}</p>
+                  <p className="tx_2">${index.price.toFixed(2)}</p>
                   <div className="qnt">
                     <ul>
                       <li>

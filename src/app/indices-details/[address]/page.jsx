@@ -58,7 +58,7 @@ function IndicesDetailPage() {
               <h1 className="section_text">{name}</h1>
               <p className="pera_list">{description}</p>
               <div className="search_form_box">
-                <p className="cunt_p">{price.toFixed(2)}</p>
+                <p className="cunt_p">${price.toFixed(2)}</p>
                 <div className="qnt">
                   <ul>
                     <li>
@@ -99,11 +99,11 @@ function IndicesDetailPage() {
                   <ul>
                     <li>
                       <span>24h Range</span>
-                      <span>{low_24h.toFixed(2)} - {high_24h.toFixed(2)}</span>
+                      <span>${low_24h.toFixed(2)} - ${high_24h.toFixed(2)}</span>
                     </li>
                     <li>
                       <span>Initial Value</span>
-                      <span>{initial_value}</span>
+                      <span>${initial_value}</span>
                     </li>
                     <li>
                       <span>Start Date</span>
