@@ -34,6 +34,7 @@ function IndicesDetailPage() {
     changed_7d,
     high_24h,
     low_24h,
+    initial_value,
     pair_ids,
     index_created_time,
   } = indexDetails;
@@ -99,6 +100,14 @@ function IndicesDetailPage() {
                     <li>
                       <span>24h Range</span>
                       <span>{low_24h.toFixed(2)} - {high_24h.toFixed(2)}</span>
+                    </li>
+                    <li>
+                      <span>Initial Value</span>
+                      <span>{initial_value}</span>
+                    </li>
+                    <li>
+                      <span>Start Date</span>
+                      <span>{formattedDate}</span>
                     </li>
                   </ul>
                 </div>
