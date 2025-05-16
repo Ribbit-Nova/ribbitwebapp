@@ -46,7 +46,7 @@ export default function Grap({ address }) {
     chart: {
       type: "candlestick",
       height: 216,
-      toolbar: { show: true },
+      toolbar: { show: false },
     },
     title: {
       text: `${selectedRange}`,
