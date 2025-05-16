@@ -45,16 +45,22 @@ p.f_text_1 {
     margin-top: 40px;
    
 }
+.terms_c1 h1:nth-child(1) {
+    margin-top: 0px;  margin-bottom: 20px;
+  }
+
 .terms_c1 h1{
     font-size: 35px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 .terms_c1 p {
-    color: #fff;
+    color:#ffffffc9;
     font-size: 17px;
     line-height: 1.5;
     margin-bottom: 17px;
+    font-weight: 300;
 }
 .terms_c1 h2 {
     font-size: 18px;

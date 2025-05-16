@@ -5,13 +5,7 @@ import Header from "../header/header";
 import Footer from "../footer/Footer";
 import CardSlider from "../HomeSlider/CardSlider";
 
-import {
-  Col,
-  Container,
-  Row,
-  Carousel,
-  Accordion,
-} from "react-bootstrap";
+import { Col, Container, Row, Carousel, Accordion } from "react-bootstrap";
 import "./home.style.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -31,6 +25,8 @@ import wallet from "../../asets/img/wallet.svg";
 import wallet2 from "../../asets/img/wallet2.svg";
 import card_graphic from "../../asets/img/Card-graphic.gif";
 import real_world_rewards from "../../asets/img/Real-world-rewards.gif";
+import hicon from "../../asets/img/hicon.png";
+import app_animation from "../../asets/img/app_animation.gif";
 
 const items = [
   {
@@ -149,46 +145,13 @@ const MultiCardCarousel = () => {
 
             <Col lg="12">
               <div className="mobile_img">
-                <Carousel>
-                  <Carousel.Item>
-                    <Image
-                      className="mobile_01"
-                      src={homepage}
-                      alt="phone"
-                      width={424}
-                      height={856}
-                    />
-                  </Carousel.Item>
-
-                  <Carousel.Item>
-                    <Image
-                      className="mobile_01"
-                      src={browser}
-                      alt="browser"
-                      width={424}
-                      height={856}
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <Image
-                      className="mobile_01"
-                      src={wallet}
-                      alt="phone"
-                      width={424}
-                      height={856}
-                    />
-                  </Carousel.Item>
-
-                  <Carousel.Item>
-                    <Image
-                      className="mobile_01"
-                      src={wallet2}
-                      alt="phone"
-                      width={424}
-                      height={856}
-                    />
-                  </Carousel.Item>
-                </Carousel>
+                <Image
+                  className="mobile_01"
+                  src={app_animation}
+                  alt="app_animation"
+                  width={550}
+                  height={856}
+                />
               </div>
             </Col>
           </Row>
@@ -368,13 +331,15 @@ const MultiCardCarousel = () => {
                   {" "}
                   <Image
                     className="k_icon"
-                    src={k1}
+                    src={hicon}
                     alt="k3"
                     width={48}
                     height={48}
                   />{" "}
                 </div>
-                <p className="k_text_1">Burn unknown tokens</p>
+                <p className="k_text_1">
+                  Burn unknown <br></br>tokens
+                </p>
                 <p className="k_text_2">
                   Not sure about a token or it’s origin? Burn it in one tap on
                   Ribbit.
@@ -394,7 +359,9 @@ const MultiCardCarousel = () => {
                     height={48}
                   />{" "}
                 </div>
-                <p className="k_text_1">24/7 Support</p>
+                <p className="k_text_1">
+                  24/7 <br></br>Support
+                </p>
                 <p className="k_text_2">
                   Have questions? Facing a problem? Get CEO level customer
                   support for all your queries.

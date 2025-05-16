@@ -49,9 +49,7 @@ function Terms() {
                     disclaimers, limitations of liability, and your obligations
                     as a user of the Services.
                   </p>
-                </div>
 
-                <div className="terms_c1">
                   <h1>1. Description of Services</h1>
                   <p>
                     Ribbit provides a range of tools to help users interact with

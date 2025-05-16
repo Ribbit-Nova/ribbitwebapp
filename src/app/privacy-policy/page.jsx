@@ -3,7 +3,7 @@ import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
 
 import { Col, Container, Row } from "react-bootstrap";
-import "./terms.style.css";
+import "./policy.style.css";
 
 import Link from "next/link";
 
