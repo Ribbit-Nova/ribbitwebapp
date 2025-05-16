@@ -26,9 +26,9 @@ export default function Grap({ address }) {
       const json = await res.json();
       const formatted = Array.isArray(json)
         ? json.map((point) => ({
-            x: new Date(point.timestamp),
-            y: [point.open, point.high, point.low, point.close],
-          }))
+          x: new Date(point.timestamp),
+          y: [point.open, point.high, point.low, point.close],
+        }))
         : [];
       setSeriesData(formatted);
     } catch (err) {
@@ -45,7 +45,7 @@ export default function Grap({ address }) {
   const options = {
     chart: {
       type: "candlestick",
-      height: 216,
+      height: "100%",
       toolbar: { show: true },
     },
     title: {
@@ -89,11 +89,10 @@ export default function Grap({ address }) {
           <button
             key={range}
             onClick={() => setSelectedRange(range)}
-            className={`px-4 py-2 rounded-md text-white ${
-              selectedRange === range
+            className={`px-4 py-2 rounded-md text-white ${selectedRange === range
                 ? "bg-blue-600"
                 : "bg-gray-600 hover:bg-gray-700"
-            }`}
+              }`}
           >
             {range}
           </button>
@@ -104,7 +103,7 @@ export default function Grap({ address }) {
         options={options}
         series={series}
         type="candlestick"
-        height={216}
+        height="100%"
         width="100%"
       />
     </div>

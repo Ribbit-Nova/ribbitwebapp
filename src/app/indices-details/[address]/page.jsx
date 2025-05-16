@@ -86,50 +86,47 @@ function IndicesDetailPage() {
 
       <section className="section_garp">
         <Container>
-          <Row>
-            <Col sm="12" lg="8">
-              <div className="index_graph">
+          <Row className="graph-section">
+            <Col lg="8" className="chart-container">
+              <div className="index_graph full-height">
                 <Graphdetails address={address} />
               </div>
             </Col>
 
-            <Col lg="4">
-              <Col lg="12">
-                <div className="index_graph_tabel">
-                  <ul>
-                    <li>
-                      <span>24h Range</span>
-                      <span>${low_24h.toFixed(2)} - ${high_24h.toFixed(2)}</span>
-                    </li>
-                    <li>
-                      <span>Initial Value</span>
-                      <span>${initial_value}</span>
-                    </li>
-                    <li>
-                      <span>Start Date</span>
-                      <span>{formattedDate}</span>
-                    </li>
-                  </ul>
-                </div>
-              </Col>
+            <Col lg="4" className="info-blocks">
+              <div className="index_graph_tabel">
+                <ul>
+                  <li>
+                    <span>24h Range</span>
+                    <span>${low_24h.toFixed(2)} - ${high_24h.toFixed(2)}</span>
+                  </li>
+                  <li>
+                    <span>Initial Value</span>
+                    <span>${initial_value}</span>
+                  </li>
+                  <li>
+                    <span>Start Date</span>
+                    <span>{formattedDate}</span>
+                  </li>
+                </ul>
+              </div>
 
-              <Col sm="12" lg="12">
-                <div className="index_graph_tabel">
-                  <p className="gr_hd">Constituents</p>
-                  <p className="gr_hd2">
-                    <span>Asset</span> <span>Weight</span>
-                  </p>
-                  <ul>
-                    {pairs.map((pair, i) => (
-                      <li key={i}>
-                        <span>{pair.toUpperCase()}</span> <span>{weights[i]}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Col>
+              <div className="index_graph_tabel">
+                <p className="gr_hd">Constituents</p>
+                <p className="gr_hd2">
+                  <span>Asset</span> <span>Weight</span>
+                </p>
+                <ul>
+                  {pairs.map((pair, i) => (
+                    <li key={i}>
+                      <span>{pair.toUpperCase()}</span> <span>{weights[i]}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Col>
-
+          </Row>
+          <Row>
             <Col sm="12" lg="12">
               <div className="index_graph_box_text">
                 <h1>Onchain transactions of the index</h1>
