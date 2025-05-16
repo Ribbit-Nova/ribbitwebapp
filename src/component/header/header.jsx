@@ -49,7 +49,7 @@ function Header() {
                   <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="/indices">Indices</Nav.Link>
                   <Nav.Link target="_blank" href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper">Documents</Nav.Link>
-                  <Nav.Link target="_blank" href="https://discord.gg/Ebk6rqTS" className="get_call">
+                  <Nav.Link href="mailto:support@ribbitwallet.com?subject=Support Request&body=Hi Support Team,%0D%0A%0D%0AI need help with..." className="get_call">
                     Get Support
                   </Nav.Link>
                 </Nav>

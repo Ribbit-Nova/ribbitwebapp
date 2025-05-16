@@ -15,13 +15,7 @@ function footer() {
             <div className="logo_footer">
               {" "}
               <Image src={logo} alt="Logo" width={125} height={30} />
-              <ul>
-                <li className="add_q">Ribbitnova Inc</li>
-                <li className="add_q">
-                  8 The Green, Ste A, Dover, Delaware 19901
-                </li>
-                <li className="add_q"> ☎️ +1 302 305 6402</li>
-              </ul>
+              <p>Ribbit combines the best of a crypto wallet, DeFi hub, and real-world payments solution into one powerful app.</p>
               {/* <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>
 

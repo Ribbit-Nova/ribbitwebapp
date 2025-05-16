@@ -56,6 +56,7 @@ nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
     font-weight: 600 !important;
     padding: 8px;
     color: #000 !important;
+    transition: background-color 0.3s;
 }
 
 .web_menu {
