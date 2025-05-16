@@ -57,8 +57,8 @@ export default function Grap({ address }) {
     plotOptions: {
       candlestick: {
         colors: {
-          upward: "#00C851",
-          downward: "#ff4444",
+          upward: "#ff4444",
+          downward: "#00C851",
         },
       },
     },
