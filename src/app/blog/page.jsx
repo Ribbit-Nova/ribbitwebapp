@@ -1,6 +1,7 @@
 "use client";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 
 import { Col, Container, Row, InputGroup, Form } from "react-bootstrap";
 import "./blog.style.css";
@@ -13,6 +14,7 @@ import sq from "../../asets/img/sq.svg";
 function indices() {
   return (
     <>
+      <Loader />
       <Header />
       <section className="section_1">
         <Container>

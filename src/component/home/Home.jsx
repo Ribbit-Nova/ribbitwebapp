@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "../header/header";
 import Footer from "../footer/Footer";
 import CardSlider from "../HomeSlider/CardSlider";
+import "animate.css";
 
 import { Col, Container, Row, Carousel, Accordion } from "react-bootstrap";
 import "./home.style.css";
@@ -19,10 +20,6 @@ import k2 from "../../asets/img/k2.svg";
 import k4 from "../../asets/img/k4.svg";
 import ic_arrow_left_bk from "../../asets/img/ic_arrow_left_bk.svg";
 import ar1 from "../../asets/img/ar1.svg";
-import homepage from "../../asets/img/homepage.svg";
-import browser from "../../asets/img/browser.svg";
-import wallet from "../../asets/img/wallet.svg";
-import wallet2 from "../../asets/img/wallet2.svg";
 import card_graphic from "../../asets/img/Card-graphic.gif";
 import real_world_rewards from "../../asets/img/Real-world-rewards.gif";
 import hicon from "../../asets/img/hicon.png";

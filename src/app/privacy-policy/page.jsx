@@ -10,6 +10,7 @@ import Link from "next/link";
 function Terms() {
   return (
     <>
+      <Loader />
       <Header />
 
       <section className="section_8">

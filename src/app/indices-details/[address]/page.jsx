@@ -4,11 +4,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Header from "../../../component/header/header";
 import Footer from "../../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 import Graphdetails from "../../../component/graphDetails/Graphdetails";
 import { Col, Container, Row } from "react-bootstrap";
 import "./indices_details.style.css";
-
-
 
 function IndicesDetailPage() {
   const { address } = useParams();
@@ -40,16 +39,22 @@ function IndicesDetailPage() {
   } = indexDetails;
 
   const pairs = pair_ids?.split(",") || [];
-  const weights = Array(pairs.length).fill(`${(100 / pairs.length).toFixed(0)}%`);
+  const weights = Array(pairs.length).fill(
+    `${(100 / pairs.length).toFixed(0)}%`
+  );
 
-  const formattedDate = new Date(index_created_time).toLocaleDateString("en-GB", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  });
+  const formattedDate = new Date(index_created_time).toLocaleDateString(
+    "en-GB",
+    {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    }
+  );
 
   return (
     <>
+      <Loader />
       <Header />
       <section className="section_1">
         <Container>
@@ -98,7 +103,9 @@ function IndicesDetailPage() {
                 <ul>
                   <li>
                     <span>24h Range</span>
-                    <span>${low_24h.toFixed(2)} - ${high_24h.toFixed(2)}</span>
+                    <span>
+                      ${low_24h.toFixed(2)} - ${high_24h.toFixed(2)}
+                    </span>
                   </li>
                   <li>
                     <span>Initial Value</span>
@@ -119,7 +126,8 @@ function IndicesDetailPage() {
                 <ul>
                   {pairs.map((pair, i) => (
                     <li key={i}>
-                      <span>{pair.toUpperCase()}</span> <span>{weights[i]}</span>
+                      <span>{pair.toUpperCase()}</span>{" "}
+                      <span>{weights[i]}</span>
                     </li>
                   ))}
                 </ul>
@@ -138,7 +146,8 @@ function IndicesDetailPage() {
                     <span>Type </span> <span>Create Index</span>
                   </li>
                   <li>
-                    <span>Data Pairs </span> <span>{pairs.join(", ").toUpperCase()}</span>
+                    <span>Data Pairs </span>{" "}
+                    <span>{pairs.join(", ").toUpperCase()}</span>
                   </li>
                   <li>
                     <span>Weight </span> <span>{weights.join(", ")}</span>

@@ -1,6 +1,7 @@
 "use client";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 
 import {
   Col,
@@ -18,6 +19,7 @@ import ar1 from "../../asets/img/ar1.svg";
 function Faq() {
   return (
     <>
+      <Loader />
       <Header />
 
       <section className="section_8">

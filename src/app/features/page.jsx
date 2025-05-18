@@ -1,11 +1,8 @@
 "use client";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
-import {
-  Col,
-  Container,
-  Row,
-} from "react-bootstrap";
+import Loader from "../../component/Loader/Loader";
+import { Col, Container, Row } from "react-bootstrap";
 import "./features.style.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,6 +22,8 @@ import graphic6 from "../../asets/img/graphic6.png";
 function Fatures() {
   return (
     <>
+      {" "}
+      <Loader />
       <Header />
       <section className="section_1">
         <div className="section_top">
@@ -61,7 +60,6 @@ function Fatures() {
           </Container>
         </div>
       </section>
-
       <section className="section_4">
         <Container>
           <Row>
@@ -204,7 +202,6 @@ function Fatures() {
           </Row>
         </Container>
       </section>
-
       <section className="section_4 section_new_5">
         <Container>
           <Row>
@@ -320,7 +317,6 @@ function Fatures() {
           </Row>
         </Container>
       </section>
-
       <Footer />
     </>
   );
