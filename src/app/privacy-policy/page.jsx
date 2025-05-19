@@ -1,6 +1,7 @@
 "use client";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 
 import { Col, Container, Row } from "react-bootstrap";
 import "./policy.style.css";

@@ -32,7 +32,7 @@ function Fatures() {
               <Col lg="12">
                 <div className="coom_btn">
                   <Link className="cm_1" href="#">
-                    Comming Soon
+                    Coming Soon
                   </Link>
                 </div>
                 <h1 className="section_text">
