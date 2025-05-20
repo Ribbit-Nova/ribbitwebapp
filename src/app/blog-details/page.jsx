@@ -12,7 +12,7 @@ import {
   OverlayTrigger,
   Button,
 } from "react-bootstrap";
-import "./blog_details.style.css";
+import "./blog-details.style.css";
 import Link from "next/link";
 import Image from "next/image";
 import b1 from "../../asets/img/b1.jpg";

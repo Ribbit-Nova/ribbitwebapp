@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Header from "../../../component/header/header";
 import Footer from "../../../component/footer/Footer";
-import Loader from "../../component/Loader/Loader";
+import Loader from "../../../component/Loader/Loader";
 import Graphdetails from "../../../component/graphDetails/Graphdetails";
 import { Col, Container, Row } from "react-bootstrap";
 import "./indices_details.style.css";
