@@ -71,6 +71,17 @@ function Header() {
                   </Nav.Link>
 
                   <Nav.Link
+                    href="/blog"
+                    className={
+                      pathname === "/blog"
+                        ? "te xt-blue-500 font-bold"
+                        : "text-gray-700"
+                    }
+                  >
+                    Blog
+                  </Nav.Link>
+
+                  <Nav.Link
                     href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"
                     className={
                       pathname === "/features"
