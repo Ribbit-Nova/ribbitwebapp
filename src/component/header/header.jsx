@@ -71,17 +71,6 @@ function Header() {
                   </Nav.Link>
 
                   <Nav.Link
-                    href="/blog"
-                    className={
-                      pathname === "/blog"
-                        ? "te xt-blue-500 font-bold"
-                        : "text-gray-700"
-                    }
-                  >
-                    Blog
-                  </Nav.Link>
-
-                  <Nav.Link
                     href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"
                     className={
                       pathname === "/features"
@@ -91,7 +80,7 @@ function Header() {
                   >
                     Documents
                   </Nav.Link>
-
+                  
                   <Nav.Link
                     href="mailto:support@ribbitwallet.com?subject=Support Request&body=Hi Support Team,%0D%0A%0D%0AI need help with..."
                     className="get_call"
