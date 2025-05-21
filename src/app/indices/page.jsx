@@ -15,7 +15,7 @@ function Indices() {
   const [indices, setIndices] = useState([]);
 
   useEffect(() => {
-    fetch("https://testnet.ribbitwallet.com/indices")
+    fetch("https://app.ribbitwallet.com/indices")
       .then((res) => res.json())
       .then((data) => setIndices(data))
       .catch((err) => console.error("Failed to fetch indices", err));

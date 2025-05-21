@@ -15,7 +15,7 @@ function IndicesDetailPage() {
 
   useEffect(() => {
     if (address) {
-      fetch(`https://testnet.ribbitwallet.com/indices/${address}`)
+      fetch(`https://app.ribbitwallet.com/indices/${address}`)
         .then((res) => res.json())
         .then((data) => setIndexDetails(data))
         .catch((err) => console.error("Failed to fetch index details", err));

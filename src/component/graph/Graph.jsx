@@ -21,7 +21,7 @@ export default function Grap({ address }) {
     const [start, end] = getTimeRange(days);
     try {
       const res = await fetch(
-        `https://testnet.ribbitwallet.com/indices/history/${address}?start_time=${start}&end_time=${end}`
+        `https://app.ribbitwallet.com/indices/history/${address}?start_time=${start}&end_time=${end}`
       );
       const json = await res.json();
       const formatted = Array.isArray(json)
