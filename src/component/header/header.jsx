@@ -48,6 +48,7 @@ function Header() {
                 <Nav className="me-auto">
                   <Nav.Link href="/features">Features</Nav.Link>
                   <Nav.Link href="/indices">Indices</Nav.Link>
+                  <Nav.Link href="/blog">Blog</Nav.Link>
                   <Nav.Link target="_blank" href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper">Documents</Nav.Link>
                   <Nav.Link href="mailto:support@ribbitwallet.com?subject=Support Request&body=Hi Support Team,%0D%0A%0D%0AI need help with..." className="get_call">
                     Get Support
