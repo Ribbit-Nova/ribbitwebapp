@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import classNames from "classnames";
 import { Nav, Navbar, Col, Container, Row } from "react-bootstrap";
@@ -10,6 +11,11 @@ import logo from "../../asets/img/logo.png";
 <link rel="icon" href="/favicon.ico" />;
 
 function Header() {
+  const pathname = usePathname();
+
+  const linkStyle = (path) =>
+    pathname === path ? "text-blue-500 font-bold" : "text-gray-600";
+
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
 
@@ -46,11 +52,50 @@ function Header() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="/features">Features</Nav.Link>
-                  <Nav.Link href="/indices">Indices</Nav.Link>
-                  <Nav.Link href="/blog">Blog</Nav.Link>
-                  <Nav.Link target="_blank" href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper">Documents</Nav.Link>
-                  <Nav.Link href="mailto:support@ribbitwallet.com?subject=Support Request&body=Hi Support Team,%0D%0A%0D%0AI need help with..." className="get_call">
+                  <Nav.Link
+                    href="/features"
+                    className={router.pathname === "/about" ? "active" : ""}
+                  >
+                    Features{" "}
+                  </Nav.Link>
+
+                  <Nav.Link
+                    href="/indices"
+                    className={
+                      pathname === "/features"
+                        ? "te xt-blue-500 font-bold"
+                        : "text-gray-700"
+                    }
+                  >
+                    Indices
+                  </Nav.Link>
+
+                  <Nav.Link
+                    href="/blog"
+                    className={
+                      pathname === "/blog"
+                        ? "te xt-blue-500 font-bold"
+                        : "text-gray-700"
+                    }
+                  >
+                    Blog
+                  </Nav.Link>
+
+                  <Nav.Link
+                    href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"
+                    className={
+                      pathname === "/features"
+                        ? "te xt-blue-500 font-bold"
+                        : "text-gray-700"
+                    }
+                  >
+                    Documents
+                  </Nav.Link>
+
+                  <Nav.Link
+                    href="mailto:support@ribbitwallet.com?subject=Support Request&body=Hi Support Team,%0D%0A%0D%0AI need help with..."
+                    className="get_call"
+                  >
                     Get Support
                   </Nav.Link>
                 </Nav>

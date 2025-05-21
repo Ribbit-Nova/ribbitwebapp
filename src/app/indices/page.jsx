@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 import { Col, Container, Row, InputGroup, Form } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
@@ -22,6 +23,7 @@ function Indices() {
 
   return (
     <>
+      <Loader />
       <Header />
       <section className="section_1">
         <Container>
@@ -51,9 +53,13 @@ function Indices() {
             {indices.map((index, idx) => (
               <Col lg="4" key={idx}>
                 <div className="index_graph">
-                  <Link href={`/indices-details/${index.address}`} style={{ textDecoration: 'none' }}>
+                  <Link
+                    href={`/indices-details/${index.address}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <p className="tx_1">
-                      <Image src={rb} alt="icon" width={28} height={28} /> {index.name}
+                      <Image src={rb} alt="icon" width={28} height={28} />{" "}
+                      {index.name}
                     </p>
                   </Link>
                   <p className="tx_2">${index.price.toFixed(2)}</p>

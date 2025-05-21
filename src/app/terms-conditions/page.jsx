@@ -1,6 +1,7 @@
 "use client";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 
 import { Col, Container, Row } from "react-bootstrap";
 import "./terms.style.css";
@@ -10,6 +11,7 @@ import Link from "next/link";
 function Terms() {
   return (
     <>
+      <Loader />
       <Header />
 
       <section className="section_8">
@@ -49,9 +51,7 @@ function Terms() {
                     disclaimers, limitations of liability, and your obligations
                     as a user of the Services.
                   </p>
-                </div>
 
-                <div className="terms_c1">
                   <h1>1. Description of Services</h1>
                   <p>
                     Ribbit provides a range of tools to help users interact with

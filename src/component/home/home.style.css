@@ -69,6 +69,8 @@
     margin: auto;
     text-align: center;
     line-height: 54px;
+    z-index: 99;
+    position: relative;
 }
 
 .browser_btn {
@@ -131,8 +133,10 @@
     position: relative;
 }
 .mobile_img img {
-    max-width: 24% !important;
+    max-width: 100% !important;
     height: auto;
+    position: relative;
+    z-index: 9;
 }
 .section_2 {
     padding-bottom: 80px;
@@ -161,7 +165,7 @@
 }
 
 .section_text_2 {
-    font-size: 32px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 700;
     text-align: center;

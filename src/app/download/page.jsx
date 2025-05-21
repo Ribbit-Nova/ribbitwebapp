@@ -3,6 +3,7 @@
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
+import Loader from "../../component/Loader/Loader";
 import "./download.style.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,6 +15,8 @@ import a from "../../asets/img/a.png";
 function Fatures() {
   return (
     <>
+      {" "}
+      <Loader />
       <Header />
       <section className="section_1">
         <div className="section_top">
@@ -41,7 +44,6 @@ function Fatures() {
           </Container>
         </div>
       </section>
-
       <section className="section_4">
         <Container>
           <Row>
@@ -90,7 +92,6 @@ function Fatures() {
           </Row>
         </Container>
       </section>
-
       <Footer />
     </>
   );

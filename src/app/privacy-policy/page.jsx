@@ -1,15 +1,17 @@
 "use client";
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
+import Loader from "../../component/Loader/Loader";
 
 import { Col, Container, Row } from "react-bootstrap";
-import "./terms.style.css";
+import "./policy.style.css";
 
 import Link from "next/link";
 
 function Terms() {
   return (
     <>
+      <Loader />
       <Header />
 
       <section className="section_8">
