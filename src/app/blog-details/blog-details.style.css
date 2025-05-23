@@ -33,6 +33,7 @@
     gap: 14px;
     align-items: center;
 }
+
 .blog_bn {
     border-radius: 20px;
     height: 400px;
@@ -40,7 +41,7 @@
     object-fit: cover;
 }
 
-.blog_text h2{
+.blog_text h2 {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
@@ -48,10 +49,12 @@
     color: #fff;
     margin-bottom: 30px;
 }
+
 .blog_text {
     margin-top: 50px;
 }
-.blog_text p{
+
+.blog_text p {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -59,6 +62,7 @@
     color: #fff;
     margin-bottom: 0px;
 }
+
 .group_list {
     display: flex;
     justify-content: space-between;
@@ -91,31 +95,34 @@
     width: 100%;
     gap: 16px;
 }
+
 .list_sh {
     padding: 0px;
     margin-bottom: 0px;
 }
-.list_sh li:first-child{
+
+.list_sh li:first-child {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     color: #FFF;
     padding: 10px;
-    display: flex
-;
+    display: flex;
     gap: 12px;
     border-bottom: 1px solid #333232;
     align-items: center;
     padding-bottom: 14px;
 }
-.list_sh li:last-child{
+
+.list_sh li:last-child {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     color: #A9FF7E;
     padding: 10px;
-    padding-bottom:0px ;
+    padding-bottom: 0px;
 }
+
 .link_c1 li a {
     color: #828A99;
     display: flex;
@@ -411,6 +418,108 @@
     z-index: 9;
 }
 
+.sms_popup .btn_sms {
+    background: no-repeat;
+    border: none;
+    padding: 0px;
+    color: #828A99;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.sms_input input::placeholder {
+    color: #828A99 !important;
+    font-size: 14px;
+}
+
+.btn_post {
+    position: absolute;
+    width: 11%;
+    text-align: right;
+    float: right;
+    top: 0px;
+    right: 20px;
+    height: 59px;
+    margin-bottom: 0px;
+}
+
+.btn_post a {
+    float: right;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #A9FF7E;
+}
+
+.pera_sms {
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.cmt_pera {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 24px 0px;
+    margin-bottom: 0px;
+}
+
+.sms_input input {
+    border-radius: 8px;
+    background: #000;
+    border: none;
+    height: 59px;
+    padding: 10px 20px;
+}
+
+.body_sms {
+    width: 840px !important;
+}
+
+.cmt_post {
+    border-top: 1px solid #333232;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333232;
+}
+
+.user_cm_sub {
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    font-style: normal;
+    color: #828A99;
+    font-weight: 400;
+}
+
+.list_cmt {
+    display: flex;
+    gap: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sms_input {
+    margin-top: 22px;
+    margin-bottom: 28px;
+}
+
+.list_cmt li {
+    display: flex;
+    gap: 4px;
+    color: #828A99;
+    align-items: center;
+}
+
 /* section_1  */
 
 /* section_log_list */
@@ -567,14 +676,15 @@
 *[placeholder] {
     color: #828999 !important;
 }
+
 .articles_sl {
-    display: flex
-;
+    display: flex;
     margin-bottom: 48px;
     justify-content: space-between;
     align-items: center;
 }
-.text_ar1 h1{
+
+.text_ar1 h1 {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -582,13 +692,15 @@
     color: #fff;
     margin-bottom: 0px;
 }
-.text_ar2 a{
+
+.text_ar2 a {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 58px;
     color: #fff;
-}   
+}
+
 .sub_text ::placeholder {
     /* Most modern browsers support this now. */
     color: #828999;
@@ -665,7 +777,7 @@
         float: left;
         width: 100%;
         border-radius: 12px;
-        padding: 20px;
+        padding: 20px;  
     }
 
 }

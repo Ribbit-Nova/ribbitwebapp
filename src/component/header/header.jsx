@@ -13,9 +13,6 @@ import logo from "../../asets/img/logo.png";
 function Header() {
   const pathname = usePathname();
 
-  const linkStyle = (path) =>
-    pathname === path ? "text-blue-500 font-bold" : "text-gray-600";
-
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
 
@@ -80,7 +77,7 @@ function Header() {
                   >
                     Documents
                   </Nav.Link>
-                  
+
                   <Nav.Link
                     href="mailto:support@ribbitwallet.com?subject=Support Request&body=Hi Support Team,%0D%0A%0D%0AI need help with..."
                     className="get_call"
