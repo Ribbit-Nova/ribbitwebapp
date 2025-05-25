@@ -60,12 +60,12 @@ function Header() {
                     category="navigation"
                     label="Top Nav Features"
                   >
-                  <Nav.Link
-                    href="/features"
-                    className={router.pathname === "/about" ? "active" : ""}
-                  >
-                    Features{" "}
-                  </Nav.Link>
+                    <Nav.Link
+                      href="/features"
+                      className={router.pathname === "/about" ? "active" : ""}
+                    >
+                      Features{" "}
+                    </Nav.Link>
                   </TrackClick>
                   <TrackClick
                     action="click_indices"
@@ -89,6 +89,7 @@ function Header() {
                   >
                     <Nav.Link
                       href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"
+                      target="_blank"
                       className={
                         pathname === "/features"
                           ? "te xt-blue-500 font-bold"
