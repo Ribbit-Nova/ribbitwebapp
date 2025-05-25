@@ -13,7 +13,6 @@ import { getAllPosts } from "../../../lib/contentful";
 
 export default async function BlogPage() {
   const posts = await getAllPosts();
-  console.log("Posts:", posts);
 
   return (
     <>
