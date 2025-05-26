@@ -12,10 +12,9 @@ import TrackClick from "../TrackClick";
 
 function Header() {
   const pathname = usePathname();
-
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
-
+  console.log(pathname);
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -60,22 +59,27 @@ function Header() {
                     category="navigation"
                     label="Top Nav Features"
                   >
-                  <Nav.Link
-                    href="/features"
-                    className={router.pathname === "/about" ? "active" : ""}
-                  >
-                    Features{" "}
-                  </Nav.Link>
+                    <Nav.Link
+                      href="/features"
+                      className={
+                        pathname == "/features"
+                          ? "active_menu"
+                          : "text-gray-700"
+                      }
+                    >
+                      Features{" "}
+                    </Nav.Link>
                   </TrackClick>
                   <TrackClick
                     action="click_indices"
                     category="navigation"
-                    label="Top Nav indices">
+                    label="Top Nav indices"
+                  >
                     <Nav.Link
                       href="/indices"
                       className={
-                        pathname === "/features"
-                          ? "te xt-blue-500 font-bold"
+                        pathname === "/indices"
+                          ? "active_menu"
                           : "text-gray-700"
                       }
                     >
@@ -89,11 +93,7 @@ function Header() {
                   >
                     <Nav.Link
                       href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"
-                      className={
-                        pathname === "/features"
-                          ? "te xt-blue-500 font-bold"
-                          : "text-gray-700"
-                      }
+                      className={"text-gray-700"}
                     >
                       Documents
                     </Nav.Link>

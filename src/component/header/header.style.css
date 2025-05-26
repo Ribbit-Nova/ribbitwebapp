@@ -28,6 +28,10 @@
     color: #9AF26E ;
 }
 
+.header_menu .active_menu{
+    color: #9AF26E ;
+}
+
 .header_menu .navbar-nav {
     display: flex;
     justify-content: flex-end;
