@@ -5,6 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../asets/img/logo.png";
 import ar1 from "../../asets/img/ar1.svg";
+import s1 from "../../asets/img/s1.svg";
+import s2 from "../../asets/img/s2.png";
+import s3 from "../../asets/img/s3.png";
+import s4 from "../../asets/img/s4.svg";
+import s5 from "../../asets/img/s5.svg";
 
 function footer() {
   return (
@@ -15,7 +20,10 @@ function footer() {
             <div className="logo_footer">
               {" "}
               <Image src={logo} alt="Logo" width={125} height={30} />
-              <p>Ribbit combines the best of a crypto wallet, DeFi hub, and real-world payments solution into one powerful app.</p>
+              <p>
+                Ribbit combines the best of a crypto wallet, DeFi hub, and
+                real-world payments solution into one powerful app.
+              </p>
               {/* <InputGroup className="newsletter">
                 <InputGroup.Text>Subscribe to our newsletter</InputGroup.Text>
 
@@ -36,7 +44,13 @@ function footer() {
               <p>Company</p>
               <ul>
                 <li>
-                  <Link target="_blank" href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"> Whitepaper</Link>
+                  <Link
+                    target="_blank"
+                    href="https://ribbit-wallet.gitbook.io/ribbit-wallet-whitepaper"
+                  >
+                    {" "}
+                    Whitepaper
+                  </Link>
                 </li>
                 <li>
                   <Link href="/terms-conditions">Terms</Link>
@@ -176,8 +190,47 @@ function footer() {
             </div>
           </Col>
           <Col lg="12">
-            <div className="copyright_text">
-              <p>Copyright © Ribbit Wallet 2025</p>
+            {" "}
+            <div className="link_list">
+              <div className="copyright_text">
+                <p>Copyright © Ribbit Wallet 2025</p>
+              </div>
+              <div className="social_link">
+                <p>Follow us to get exclusive updates</p>
+
+                <ul>
+                  <li>
+                    <Link href="#">
+                      {" "}
+                      <Image src={s1} alt="img" width={42} height={42} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      {" "}
+                      <Image src={s2} alt="img" width={42} height={42} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      {" "}
+                      <Image src={s3} alt="img" width={42} height={42} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      {" "}
+                      <Image src={s4} alt="img" width={42} height={42} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
+                      {" "}
+                      <Image src={s5} alt="img" width={42} height={42} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </Col>
         </Row>
