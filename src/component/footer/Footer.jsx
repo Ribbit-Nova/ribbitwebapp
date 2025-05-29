@@ -6,10 +6,8 @@ import Link from "next/link";
 import logo from "../../asets/img/logo.png";
 import ar1 from "../../asets/img/ar1.svg";
 import s1 from "../../asets/img/s1.svg";
-import s2 from "../../asets/img/s2.png";
 import s3 from "../../asets/img/s3.png";
 import s4 from "../../asets/img/s4.svg";
-import s5 from "../../asets/img/s5.svg";
 
 function footer() {
   return (
@@ -200,33 +198,21 @@ function footer() {
 
                 <ul>
                   <li>
-                    <Link href="#">
+                    <Link target="_blank" href="https://discord.com/invite/PQ96y6S9aS">
                       {" "}
                       <Image src={s1} alt="img" width={42} height={42} />
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
-                      {" "}
-                      <Image src={s2} alt="img" width={42} height={42} />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
+                    <Link target="_blank" href="https://www.linkedin.com/company/ribbit-wallet/">
                       {" "}
                       <Image src={s3} alt="img" width={42} height={42} />
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
+                    <Link target="_blank" href="https://x.com/ribbitwallet">
                       {" "}
                       <Image src={s4} alt="img" width={42} height={42} />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      {" "}
-                      <Image src={s5} alt="img" width={42} height={42} />
                     </Link>
                   </li>
                 </ul>
