@@ -5,11 +5,25 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../asets/img/logo.png";
 import ar1 from "../../asets/img/ar1.svg";
+import s01 from "../../asets/img/s01.svg";
 import s1 from "../../asets/img/s1.svg";
 import s3 from "../../asets/img/s3.png";
 import s4 from "../../asets/img/s4.svg";
 
 function footer() {
+  const handleZipDownload = async () => {
+    const response = await fetch("../../asets/files/ribbit_kit_2025.zip"); // Ya koi URL jahan se zip mile
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "ribbit_kit_2025.zip"; // Downloaded filename
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(url);
+  };
   return (
     <footer className="footer_menu">
       <Container>
@@ -84,7 +98,9 @@ function footer() {
                   <Link href="#">Blog</Link>
                 </li>
                 <li>
-                  <Link href="#">Brandkit</Link>
+                  <Link href="javascript:;" onClick={handleZipDownload}>
+                    Brandkit
+                  </Link>
                 </li>
                 <li>
                   <Link href="#">News</Link>
@@ -176,7 +192,9 @@ function footer() {
                         <Link href="#">Blog</Link>
                       </li>
                       <li>
-                        <Link href="#">Brandkit</Link>
+                        <Link href="javascript:;" onClick={handleZipDownload}>
+                          Brandkit
+                        </Link>
                       </li>
                       <li>
                         <Link href="#">News</Link>
@@ -198,13 +216,25 @@ function footer() {
 
                 <ul>
                   <li>
-                    <Link target="_blank" href="https://discord.com/invite/PQ96y6S9aS">
+                    <Link target="_blank" href="https://t.me/+q6_7wewsa1phNjgy">
+                      {" "}
+                      <Image src={s01} alt="img" width={42} height={42} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      target="_blank"
+                      href="https://discord.com/invite/PQ96y6S9aS"
+                    >
                       {" "}
                       <Image src={s1} alt="img" width={42} height={42} />
                     </Link>
                   </li>
                   <li>
-                    <Link target="_blank" href="https://www.linkedin.com/company/ribbit-wallet/">
+                    <Link
+                      target="_blank"
+                      href="https://www.linkedin.com/company/ribbit-wallet/"
+                    >
                       {" "}
                       <Image src={s3} alt="img" width={42} height={42} />
                     </Link>

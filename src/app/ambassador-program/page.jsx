@@ -189,8 +189,8 @@ function Fatures() {
                     className="card_gif"
                     src={new_ar1}
                     alt="coin_1"
-                    width={103}
-                    height={74}
+                    width={90}
+                    height={90}
                   />{" "}
                 </div>
                 <div className="ribbit_box_text ch1">
