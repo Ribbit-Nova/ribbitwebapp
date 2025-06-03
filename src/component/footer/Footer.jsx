@@ -12,13 +12,13 @@ import s4 from "../../asets/img/s4.svg";
 
 function footer() {
   const handleZipDownload = async () => {
-    const response = await fetch("../../asets/files/ribbit_kit_2025.zip"); // Ya koi URL jahan se zip mile
+    const response = await fetch("/brandkit/RibbitKit2025.zip"); // Ya koi URL jahan se zip mile
     const blob = await response.blob();
     const url = window.URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "ribbit_kit_2025.zip"; // Downloaded filename
+    a.download = "RibbitKit2025.zip"; // Downloaded filename
     document.body.appendChild(a);
     a.click();
     a.remove();
