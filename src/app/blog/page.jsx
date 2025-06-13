@@ -10,6 +10,7 @@ import user from "../../asets/img/user.png";
 import sq from "../../asets/img/sq.svg";
 
 import { getAllPosts } from "../../../lib/contentful";
+import WalletConnectButton from "@/component/WalletConnectButton";
 
 export default async function BlogPage() {
   const posts = await getAllPosts();
@@ -73,7 +74,11 @@ export default async function BlogPage() {
                 <Col sm="12" lg="3" key={post.sys.id}>
                   <div className="blog_box">
                     <Image
-                      src={"https:" + coverImage.fields.file.url}
+                      src={
+                        coverImage && coverImage.fields && coverImage.fields.file
+                          ? "https:" + coverImage.fields.file.url
+                          : "/placeholder.png"
+                      }
                       alt={title}
                       width={300}
                       height={231}
@@ -95,6 +100,7 @@ export default async function BlogPage() {
               );
             })}
           </Row>
+          <WalletConnectButton />
         </Container>
       </section>
 
