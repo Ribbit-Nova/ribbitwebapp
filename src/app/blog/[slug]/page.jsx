@@ -9,9 +9,11 @@ import "../../../app/blog/blog.style.css";
 // Pre-generates paths (optional but improves static builds)
 export async function generateStaticParams() {
     const posts = await getAllPosts();
-    return posts.map((post) => ({
-        slug: post.fields.slug,
-    }));
+    return posts
+        .filter(post => post.fields && typeof post.fields.slug === "string" && post.fields.slug.length > 0)
+        .map(post => ({
+            slug: post.fields.slug,
+        }));
 }
 
 export default async function BlogDetail({ params }) {
