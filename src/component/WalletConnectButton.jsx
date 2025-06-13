@@ -16,12 +16,14 @@ export default function WalletConnectButton() {
   }, [connector]);
 
   const connect = async () => {
-    console.log(await connector.connect({
+    // Get the base URL of the website
+    const baseUrl = window.location.origin;
+    await connector.connect({
       name: "Ribbit DApp",
-      logo: "http://localhost:3000/logo.jpg",
+      logo: baseUrl+"/logo.jpg",
       description: "Connect to Ribbit Wallet",
-      url: window.location.href
-    }));
+      url: baseUrl
+    })
   };
 
   return (
