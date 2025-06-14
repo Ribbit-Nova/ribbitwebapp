@@ -1,34 +1,29 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { RibbitConnectSDK } from 'ribbit-connect-sdk';
 
 export default function WalletConnectButton() {
-  const [connector] = useState(() => new RibbitConnectSDK());
-  const [account, setAccount] = useState("");
+    const [connector] = useState(() => new RibbitConnectSDK());
 
-  useEffect(() => {
-    connector.on('connect', (session) => {
-      setAccount(session.accounts[0]);
-    });
+    const connectToWallet = async () => {
+        // Get the base URL of the website
+        const baseUrl = window.location.origin;
+        console.log("Base URL:", baseUrl);
+        try {
+            const sessionId = await connector.connect({
+                name: "Ribbit DApp",
+                logo: baseUrl + "/logo.jpg",
+                description: "Connect to Ribbit Wallet",
+                url: baseUrl
+            });
+            console.log('Connected with session:', sessionId);
+        } catch (error) {
+            console.error('Connection failed:', error);
+        }
+    };
 
-    return () => connector.disconnect();
-  }, [connector]);
-
-  const connect = async () => {
-    // Get the base URL of the website
-    const baseUrl = window.location.origin;
-    await connector.connect({
-      name: "Ribbit DApp",
-      logo: baseUrl+"/logo.jpg",
-      description: "Connect to Ribbit Wallet",
-      url: baseUrl
-    })
-  };
-
-  return (
-    <button onClick={connect}>
-      {account ? `Connected: ${account}` : "Connect Wallet"}
-    </button>
-  );
+    return (
+        <button onClick={connectToWallet}>Connect Wallet</button>
+    );
 }
