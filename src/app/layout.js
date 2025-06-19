@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "/multi-chain-wallet-image.png",
+        url: "https://ribbitwallet.com/multi-chain-wallet-image.png",
         alt: "Multi-chain wallet banner image",
       },
     ],
