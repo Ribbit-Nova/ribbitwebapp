@@ -15,8 +15,16 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  title: "RibbitNova",
-  description: "Next-generation multi-chain wallet and payments app that makes crypto simple, secure, and usable in daily life. ",
+  title: "Ribbit - Multichain wallet built on Supra",
+  description: "Ribbit combines the best of a crypto wallet, DeFi hub, and real-world payments solution into one powerful app.",
+  openGraph: {
+    images: [
+      {
+        url: "/multi-chain-wallet-image.png",
+        alt: "Multi-chain wallet banner image",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

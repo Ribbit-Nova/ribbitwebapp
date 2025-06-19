@@ -1,15 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { RibbitConnectSDK } from 'ribbit-connect-sdk';
+import { RibbitWalletConnect } from 'ribbit-wallet-connect';
 
 export default function WalletConnectButton() {
-    const [connector] = useState(() => new RibbitConnectSDK());
+    const [connector] = useState(() => new RibbitWalletConnect());
 
     const connectToWallet = async () => {
         // Get the base URL of the website
         const baseUrl = window.location.origin;
-        console.log("Base URL:", baseUrl);
         try {
             const sessionId = await connector.connect({
                 name: "Ribbit DApp",
