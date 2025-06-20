@@ -2,7 +2,7 @@
 import Header from "../../component/header/header";
 import Footer from "../../component/footer/Footer";
 import Loader from "../../component/Loader/Loader";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import useClickOutside from "@/utils/useClickOutside";
 
 import {
@@ -12,7 +12,6 @@ import {
   Breadcrumb,
   Popover,
   OverlayTrigger,
-  Overlay,
   Button,
   Form,
   InputGroup,
@@ -43,8 +42,8 @@ function indices() {
             <Col lg="12">
               <div className="breadcrumb_list">
                 <Breadcrumb>
-                  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-                  <Breadcrumb.Item href="#">Blog</Breadcrumb.Item>
+                  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item href="/blog">Blog</Breadcrumb.Item>
                   <Breadcrumb.Item active>
                     How to Buy Hot Tokens on Ribbit with Binance Connect
                   </Breadcrumb.Item>

@@ -8,12 +8,19 @@ import Link from "next/link";
 import Image from "next/image";
 import user from "../../asets/img/user.png";
 import sq from "../../asets/img/sq.svg";
-
-import { getAllPosts } from "../../../lib/contentful";
-import WalletConnectButton from "@/component/WalletConnectButton";
+import { createClient } from 'contentful';
 
 export default async function BlogPage() {
-  const posts = await getAllPosts();
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  });
+
+  const entries = await client.getEntries({
+    content_type: process.env.CONTENT_TYPE,
+  });
+
+  const posts  = entries.items || [];
 
   return (
     <>
@@ -67,8 +74,8 @@ export default async function BlogPage() {
           <Row>
             {posts.map((post) => {
               const fields = post.fields;
-              const { title = "", category = "", author = "", publishedDate = "", slug = "", coverImage = {} } = fields;
-              const coverImageUrl = coverImage.fields?.file?.url || ""; // Fallback to an empty string if coverImage or its nested properties are undefined
+              const { title = "", publishDate = "", slug = "", coverImage = {} } = fields;
+              const coverImageUrl = coverImage.fields?.file?.url || ""; 
 
               return (
                 <Col sm="12" lg="3" key={post.sys.id}>
@@ -76,7 +83,7 @@ export default async function BlogPage() {
                     <Image
                       src={
                         coverImage && coverImage.fields && coverImage.fields.file
-                          ? "https:" + coverImage.fields.file.url
+                          ? "https:" + coverImageUrl
                           : "/placeholder.png"
                       }
                       alt={title}
@@ -84,15 +91,16 @@ export default async function BlogPage() {
                       height={231}
                     />
                     <div className="blog_box_text">
-                      <Link className="cr1" href={`/blog/${slug}`}>{category}</Link>
-                      <p>{title}</p>
+                      <Link className="cr1" href={`/blog/${slug}`}>Crypto</Link>
+                      <Link href={`/blog/${slug}`}><p>{title}</p></Link>
                     </div>
                     <div className="user_list">
                       <ul>
-                        <li><Image src={user} alt="author" width={20} height={20} /></li>
-                        <li>{author}</li>
-                        <li><svg width="4" height="4"><circle cx="2" cy="2" r="2" fill="#828A99" /></svg></li>
-                        <li>{new Date(publishedDate).toLocaleDateString("en-GB")}</li>
+                        {/* <li><Image src={user} alt="author" width={20} height={20} /></li> */}
+                        <li>Author: RibbitNova</li>
+                        {/* <li><svg width="4" height="4"><circle cx="2" cy="2" r="2" fill="#828A99" /></svg></li> */}
+                        <li>Publish Date: </li>
+                        <li>{new Date(publishDate).toLocaleDateString("en-GB")}</li>
                       </ul>
                     </div>
                   </div>
@@ -100,7 +108,6 @@ export default async function BlogPage() {
               );
             })}
           </Row>
-          <WalletConnectButton />
         </Container>
       </section>
 
@@ -123,7 +130,6 @@ export default async function BlogPage() {
           </Col>
         </Row>
       </section>
-
       <Footer />
     </>
   );
