@@ -71,6 +71,22 @@ function Header() {
                     </Nav.Link>
                   </TrackClick>
                   <TrackClick
+                    action="click_blog"
+                    category="navigation"
+                    label="Top Nav Blog"
+                  >
+                    <Nav.Link
+                      href="/blog"
+                      className={
+                        pathname == "/blog"
+                          ? "active_menu"
+                          : "text-gray-700"
+                      }
+                    >
+                      Blog
+                    </Nav.Link>
+                  </TrackClick>
+                  <TrackClick
                     action="click_indices"
                     category="navigation"
                     label="Top Nav indices"
