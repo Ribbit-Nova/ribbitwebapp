@@ -9,12 +9,13 @@ import "./policy.style.css";
 import Link from "next/link";
 
 function Terms() {
+  const isApp = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("app") !== "true";
   return (
     <>
       <Loader />
-      <Header />
+      {isApp && <Header />}
 
-      <section className="section_8">
+      <section className={`section_8${!isApp ? " app_privacy" : ""}`}>
         <Container>
           <Row>
             <Col lg="12">
@@ -398,23 +399,13 @@ function Terms() {
                     Email:
                     <Link href="#">support@ribbitwallet.com</Link>
                   </p>
-                  <p>
-                    Official Website:
-                    <Link href="#">https://ribbitwallet.com</Link>
-                  </p>
-                  <p>
-                    Mailing Address:
-                    <Link href="#">
-                      Ribbitnova Inc 8 The Green, Ste A, Dover, Delaware 19901
-                    </Link>
-                  </p>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
-      <Footer />
+      {isApp && <Footer />}
     </>
   );
 }

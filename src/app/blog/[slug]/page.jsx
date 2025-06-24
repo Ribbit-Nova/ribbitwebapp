@@ -55,7 +55,6 @@ export default async function BlogDetail({ params }) {
     return (
         <>
             <Header />
-
             <section className="section_1">
                 <Container>
                     <Row>

@@ -3,6 +3,7 @@
     margin-left: 16px;
     color: #9af26e;
 }
+
 .faq_box {
     text-align: center;
 }
@@ -13,7 +14,7 @@
     border-radius: 0px;
     background: #010101;
     margin-top: 80px;
-    
+
 }
 
 p.f_text_1 {
@@ -36,6 +37,7 @@ p.f_text_1 {
     margin-bottom: 40px;
     margin-top: 20px;
 }
+
 .terms_box {
     margin-bottom: 0px;
     border-radius: 30px;
@@ -43,20 +45,23 @@ p.f_text_1 {
     margin-right: auto;
     padding: 30px;
     margin-top: 40px;
-   
+
 }
-.terms_c1 h1{
+
+.terms_c1 h1 {
     font-size: 35px;
     color: #fff;
     margin-bottom: 35px;
     margin-top: 35px;
 }
+
 .terms_c1 p {
     color: #fff;
     font-size: 17px;
     line-height: 1.5;
     margin-bottom: 17px;
 }
+
 .terms_c1 h2 {
     font-size: 18px;
     color: #ffffff;
@@ -69,8 +74,13 @@ p.f_text_1 {
     margin-bottom: 10px;
     list-style: disc;
 }
+
 /* section_8 */
 
+.app_privacy {
+    padding-top: 0px;
+    margin-top: 50px;
+}
 
 @media only screen and (max-width: 767px) {
     .section_text {
@@ -82,24 +92,45 @@ p.f_text_1 {
         text-align: center;
         line-height: 1.4;
     }
+
     .container {
         width: 90%;
     }
-    .terms_c1 h1 {
-        font-size: 22px;}
-    .terms_box{              margin-top: 15px;    padding: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;}
-    .section_8 {
-        padding-top: 20px;}
-        .terms_c1 p{font-size: 14px;}
-        p.f_text_1{        width: 100%; font-size: 25px; }
 
-.terms_c1 li {
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 10px;
-    list-style: disc;
-    line-height: 1.4;
-}
+    .terms_c1 h1 {
+        font-size: 22px;
+    }
+
+    .terms_box {
+        margin-top: 15px;
+        padding: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .section_8 {
+        padding-top: 20px;
+    }
+
+    .terms_c1 p {
+        font-size: 14px;
+    }
+
+    p.f_text_1 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .terms_c1 li {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 10px;
+        list-style: disc;
+        line-height: 1.4;
+    }
+
+    .app_privacy {
+        padding-top: 0px;
+        margin-top: 30px !important;
+    }
 }
